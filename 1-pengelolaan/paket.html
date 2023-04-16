@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Paket</title>
+    <title>Pengelolaan - Paket</title>
     
     <!-- DESC -->
     <meta name="description" content="">
@@ -25,7 +25,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../assets/js/script.js"></script>
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
 </head>
 <body>
@@ -81,7 +82,7 @@
               <a class="absolute-nav"></a>
             </li>
             <li class="sub-menu">
-              <a href="../home.html"><i class="fa fa-home"></i><span>Dashboard</span></a>
+              <a href="../home.html"><i class="fa fa-home"></i><span>Homepage</span></a>
             </li>
 
             <li class="sub-menu active">
@@ -193,8 +194,8 @@
         </div>
      <div class="sub-content">
         <h2>Paket Member</h2>
-     </div>   
-
+     </div>       
+     
      <div class="table">
       <div class="table-wrapper">
         <div class="table-header">
@@ -210,10 +211,31 @@
 
         <div class="table-content">
 
-          <div class="table-dropdown"></div>
-          <div class="table-search">
-            <i class="fa fa-search"></i>
-            <a href="">Cari</a>
+            <div class="topof-table-content">
+
+            <div class="table-dropdown">
+
+              <div class="wrapper">
+                <div class="select-btn">
+                  <span>Semua Member</span>
+                  <i class="uil uil-angle-down"></i>
+                </div>
+                <div class="content">
+                  <div class="search">
+                    <i class="uil uil-search"></i>
+                    <input spellcheck="false" type="text" placeholder="Search" class="dropdown-search">
+                  </div>
+                  <ul class="options"></ul>
+                </div>
+              </div>
+
+            </div>         
+        
+            <div class="table-search">
+              <i class="fa fa-search"></i>
+              <a href="">Cari</a>
+            </div>
+
           </div>
 
           <div class="table-content-wrapper">
@@ -281,6 +303,7 @@
 
   </section>
 
+<script src="../assets/js/script.js"></script>  
 
 </div>  
 </body>

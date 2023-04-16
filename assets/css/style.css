@@ -63,6 +63,10 @@ a{
     color: #7b8188;
 }
 
+input[type=search]::-webkit-search-cancel-button{
+    display: none;
+}
+
 /* Login */
 
 .login-wrapper{
@@ -355,7 +359,7 @@ nav>ul.navbar ul.dropdownNav>li>a{
     'navbar content content'
     'navbar content content'
     ;
-    grid-template-columns: 0fr 3.45fr;
+    grid-template-columns: 0fr 4fr;
 }
 
 .header-section{
@@ -369,7 +373,7 @@ nav>ul.navbar ul.dropdownNav>li>a{
 .content-section{
     padding: 30px;
     background: #fff;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -419,7 +423,6 @@ nav>ul.navbar ul.dropdownNav>li>a{
 /* Box Content */
 
 .box-content{
-    height: 40vh;
     margin-top: 20px;
 }
 
@@ -538,6 +541,7 @@ nav>ul.navbar ul.dropdownNav>li>a{
 .table-header .right-side i,
 .table-header .right-side a{
     color: #fff;
+    padding-right: 5px;
 }
 
 .table-header .left-side a{
@@ -572,10 +576,21 @@ table#rekening-bank-table-content{
 .topof-table-content{
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .table-search{
     background: #1BBC9B;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-left: 15px;
+    padding:2px 30px;
+}
+
+.table-show{
+    background: #659be0;
     width: fit-content;
     display: flex;
     align-items: center;
@@ -597,18 +612,20 @@ table#rekening-bank-table-content{
     background: #eee;
 }
 
-.table-search i{
+.table-search i,
+.table-show i{
     font-size: 13px;
 }
 
-.table-search a{
+.table-search a,
+.table-show a{
     color: #fff;
     padding: 5px;
     font-size: 15px;
 }
 
 .table-search-filter{
-    margin-left: 15px;
+    margin-left: 20px;
     width: fit-content;
     display: flex;
     align-items: center;
@@ -617,13 +634,15 @@ table#rekening-bank-table-content{
 .table-search-filter input{
     color: #888;
     border: 1px solid #ccc;
-    padding: 8px 90px 8px 15px;
+    padding: 8px 0 8px 20px;
     border-radius: 20px 0 0 20px;
 }
 
 .table-search-filter input::placeholder{
     color: #ccc;
     letter-spacing: 1px;
+    margin-right: 110px;
+    text-align: right;
 }
 
 .table-search-filter i{
@@ -633,7 +652,7 @@ table#rekening-bank-table-content{
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     border-right: 1px solid #ccc;
-    padding: 9.5px;
+    padding: 10px;
     border-radius: 0 20px 20px 0;
 }
 
@@ -657,12 +676,29 @@ table#rekening-bank-table-content{
     font-weight: 500;
 }
 
+.table-content-wrapper .table-count td,
+.table-content-wrapper .table-count{
+    background: #fbe1e3;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.table-content-wrapper .table-final-result{
+    background: #f9e491;
+    font-weight: bold;
+}
+
 .table-content-wrapper td{
     border: 1px solid #e7ecf1;
     padding: 15px 10px;
     font-size: 14px;
     font-weight: 100;
 }
+
+.table-content-wrapper td p{
+    font-size: 15px;
+}
+
 
 .table-content-wrapper td .fa-xmark{
     color: #ff0000;
@@ -671,6 +707,12 @@ table#rekening-bank-table-content{
 
 .table-content-wrapper td .fa-check{
     color: #1BBC9B;
+    font-weight: 600;
+}
+
+.table-content-wrapper td a i.fa-check{
+    color: #fff;
+    padding-right: 5px;
     font-weight: 600;
 }
 
@@ -691,29 +733,33 @@ table#rekening-bank-table-content{
 .table-content-wrapper td.table-management a.edit-table{
     background: transparent;
     padding: 5px 12px;
-    color: #1BBC9B;
     font-size: 12px;
     border: 1px solid #1BBC9B;
     border-radius: 20px;
+    color: #1BBC9B;
+}
+
+.table-content-wrapper td.table-management i{
+    padding-right: 5px;
 }
 
 .table-content-wrapper td.table-management a.edit-table:hover{
-    background: #1BBC9B;
     color: #fff;
+    background: #1BBC9B;
 }
 
 .table-content-wrapper td.table-management a.delete-table{
+    color: #ed6b75;
     background: transparent;
     padding: 5px 12px;
-    color: #ed6b75;
     font-size: 12px;
     border: 1px solid #ed6b75;
     border-radius: 20px;
 }
 
 .table-content-wrapper td.table-management a.delete-table:hover{
-    background: #ed6b75;
     color: #fff;
+    background: #ed6b75;
 }
 
 .table-content-wrapper td.table-management a.edit-table-manual-booking{
@@ -736,6 +782,14 @@ table#rekening-bank-table-content{
     margin-left: 5px;
 }
 
+.table-content-wrapper a.invoice{
+    color: #337ab7;
+    font-weight: 400;
+}
+
+.table-content-wrapper a.invoice:hover{
+    text-decoration: underline;
+}
 
 /* Form */
 
@@ -754,25 +808,32 @@ form{
 .form-wrapper-retrieve{
     display: flex;
     flex-direction: column;
-    width: 33%;
 }
 
 .form-content-wrapper-retrieve{
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+.form-content-wrapper-retrieve label{
+    width: calc(200% - 2000px);
 }
 
 .form-content-wrapper-retrieve input{
     color: #888;
     border: 1px solid #ccc;
-    padding: 10px 140px 10px 10px;
+    padding: 10px 0 10px 10px;
     margin-bottom: 5px;
     margin-top: 10px;
+    width: 320px;
+}
+
+.form-content-wrapper-retrieve select{
+
 }
 
 .form-content-wrapper-retrieve .retrieve-content{
-    margin-left: auto;
+    
 }
 
 .form-content-wrapper-retrieve .content-mini{
@@ -876,7 +937,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .text-manual-booking p{
     margin-bottom: 20px;
     font-size: 14px;
-    opacity: .9;
+    opacity: .7;
 }
 
 .text-manual-booking p strong{
@@ -884,41 +945,335 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: .9;
 }
 
-/* Refund Ticket */
+/* Text Warning */
 
-.text-refund-ticket{
+.text-warning{
     padding: 20px;
     margin: 20px;
     background: #e0ebf9;
 }
 
-.text-refund-ticket h5{
+.text-warning h5{
     font-size: 1em;
     color: #327ad5;
     margin-bottom: 10px;
     font-weight: 400;
 }
 
-.text-refund-ticket p{
+.text-warning p{
     margin-bottom: 20px;
     font-size: 15px;
     color: #327ad5;
     font-weight: 300;
 }
 
-.text-refund-ticket li{
+.text-warning li{
     padding-left: 20px;
     font-size: 14px;
     color: #327ad5;
     font-weight: 300;
 }
 
+/* Konfirmasi Top Up Button */
+.button-konfirmasi-topup{
+    margin-left: 20px;
+}
 
+.button-konfirmasi-topup i{
+    padding-right: 10px;
+}
 
+.button-konfirmasi-topup .button-konfirmasi-topup-true{
+    background: #1BBC9B;
+    padding: 8px 30px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+}
 
+.button-konfirmasi-topup .button-konfirmasi-topup-false{
+    background: #ed6b75;
+    padding: 8px 30px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+}
 
+/* Date Picker */
 
+.topof-table-content label{
+    color: #888;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
 
+.topof-table-content input#disabled{
+    width: 3%;
+    padding: 9px 2px;
+    text-align: center;
+    background: #eee;
+}
 
+.topof-table-content input[type=text]{
+    color: #888;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
 
+.topof-table-content input::placeholder{
+    font-size: 14px;
+    text-align: center;
+}
 
+.calendar {
+    width: 150px;
+    padding: 9px;
+    background: #ffffff;
+    font-size: 18px;
+  }
+
+.ui-datepicker {
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+.ui-datepicker-header {
+    height: auto;
+    width: 100%;
+    line-height: 50px;
+    color: #ffffff;
+    background: #1BBC9B;
+    margin-bottom: 10px;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+    width: 10px;
+    height: 10px;
+    text-indent: 9999px;
+    border-radius: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 12px;
+}
+.ui-datepicker-prev {
+    float: left;
+    margin-left: 12px;
+}
+.ui-datepicker-prev:after {
+    transform: rotate(45deg);
+    margin: -43px 0px 0px 8px;
+}
+.ui-datepicker-next {
+    float: right;
+    margin-right: 20px;
+}
+.ui-datepicker-next:after {
+    transform: rotate(-135deg);
+    margin: -43px 0px 0px 6px;
+}
+.ui-datepicker-prev:after,
+.ui-datepicker-next:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.ui-datepicker-prev:hover,
+.ui-datepicker-next:hover,
+.ui-datepicker-prev:hover:after,
+.ui-datepicker-next:hover:after {
+    border-color: #ccc;
+}
+
+.ui-datepicker-title {
+    text-align: center;
+    font-size: 15px;
+}
+
+.ui-datepicker-calendar {
+    width: 100%;
+    text-align: center;
+}
+
+.ui-datepicker-calendar thead tr th span {
+    display: block;
+    width: 40px;
+    color: #1BBC9B;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.ui-state-default {
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    line-height: 40px;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.ui-state-default:hover {
+    color: #36c6d3;
+    font-weight: bolder;
+}
+
+.ui-state-highlight {
+    color: #36c6d3;
+    font-weight: bolder;
+}
+
+.ui-state-active {
+    color: #ffffff;
+    background-color:#1BBC9B;
+    border-radius: 20px;
+}
+
+.ui-datepicker-unselectable .ui-state-default {
+    color: #eee;
+    border: 2px solid transparent;
+}
+
+/* Rekonsiliasi */
+
+.rekonsiliasi-content{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.rekonsiliasi-content label{
+    color: #888;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.rekonsiliasi-content input{
+    padding: 7px;
+    width: 50%;
+}
+
+/* Dropdown Search */
+
+::selection{
+    color: #fff;
+    background: #4285f4;
+  }
+
+  .table-dropdown{
+    width: 40%;
+  }
+
+  .table-dropdown .wrapper{
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  .select-btn, .options li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .select-btn{
+    height: 35px;
+    padding: 10px;
+    font-size: 12px;
+    background: #fff;
+    justify-content: space-between;
+    border: 1px solid #eee;
+    color: #888;
+  }
+
+  .select-btn i{
+    font-size: 31px;
+    transition: transform 0.3s linear;
+  }
+  .wrapper.active .select-btn i{
+    transform: rotate(-180deg);
+  }
+  .table-dropdown .content{
+    display: none;
+    position: absolute;
+    top: auto;
+    left: auto;
+    padding: 10px;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+  .table-dropdown .wrapper.active .content{
+    display: block;
+  }
+  .table-dropdown .content .search{
+    position: relative;
+  }
+  .table-dropdown .search i{
+    top: 50%;
+    left: 15px;
+    color: #999;
+    font-size: 12px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+  .table-dropdown .search input{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 0 20px 0 43px;
+    border: 1px solid #B3B3B3;
+    text-align: left;
+  }
+  
+  .table-dropdown .search input::placeholder{
+    text-align: left;
+  }
+
+  .table-dropdown .search input:focus{
+    padding-left: 42px;
+    border: 2px solid #4285f4;
+  }
+  .table-dropdown .search input::placeholder{
+    color: #bfbfbf;
+  }
+  .table-dropdown .content .options{
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 7px;
+  }
+  .table-dropdown .options::-webkit-scrollbar{
+    width: 7px;
+  }
+  .table-dropdown .options::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 25px;
+  }
+  .table-dropdown .options::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 25px;
+  }
+  .table-dropdown .options::-webkit-scrollbar-thumb:hover{
+    background: #b3b3b3;
+  }
+  .table-dropdown .options li{
+    height: 50px;
+    padding: 0 13px;
+    font-size: 13px;
+  }
+  .table-dropdown .options li:hover, li.selected{
+    border-radius: 5px;
+    background: #f2f2f2;
+  }
