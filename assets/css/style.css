@@ -576,7 +576,6 @@ table#rekening-bank-table-content{
 .topof-table-content{
     display: flex;
     align-items: center;
-    width: 100%;
 }
 
 .table-search{
@@ -1187,7 +1186,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .select-btn{
     height: 35px;
     padding: 10px;
-    font-size: 12px;
+    font-size: 14px;
     background: #fff;
     justify-content: space-between;
     border: 1px solid #eee;
@@ -1195,12 +1194,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 
   .select-btn i{
-    font-size: 31px;
+    font-size: 15px;
     transition: transform 0.3s linear;
   }
+
   .wrapper.active .select-btn i{
     transform: rotate(-180deg);
   }
+
   .table-dropdown .content{
     display: none;
     position: absolute;
@@ -1211,12 +1212,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 7px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   }
+
   .table-dropdown .wrapper.active .content{
     display: block;
   }
+
   .table-dropdown .content .search{
     position: relative;
   }
+
   .table-dropdown .search i{
     top: 50%;
     left: 15px;
@@ -1226,6 +1230,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     transform: translateY(-50%);
     position: absolute;
   }
+
   .table-dropdown .search input{
     height: 30px;
     width: 100%;
@@ -1245,35 +1250,44 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-left: 42px;
     border: 2px solid #4285f4;
   }
+
   .table-dropdown .search input::placeholder{
     color: #bfbfbf;
   }
+
   .table-dropdown .content .options{
     margin-top: 10px;
     max-height: 250px;
     overflow-y: auto;
     padding-right: 7px;
   }
+
   .table-dropdown .options::-webkit-scrollbar{
     width: 7px;
   }
+
   .table-dropdown .options::-webkit-scrollbar-track{
     background: #f1f1f1;
     border-radius: 25px;
   }
+
   .table-dropdown .options::-webkit-scrollbar-thumb{
     background: #ccc;
     border-radius: 25px;
   }
+
   .table-dropdown .options::-webkit-scrollbar-thumb:hover{
-    background: #b3b3b3;
+    background: #4285f4;
   }
+
   .table-dropdown .options li{
-    height: 50px;
+    height: 40px;
     padding: 0 13px;
     font-size: 13px;
   }
+  
   .table-dropdown .options li:hover, li.selected{
     border-radius: 5px;
-    background: #f2f2f2;
+    color: #fff;
+    background: #4285f4;
   }
