@@ -210,18 +210,25 @@
 
         <div class="table-content">
 
-            <div class="topof-table-content">
+          <div class="topof-table-content">
 
-                <div class="table-search-filter">
-                    <input type="search" name="" id="" placeholder="filter ...">
-                    <i class="fa fa-search"></i>
+            <div class="table-dropdown">
+              <form>
+                <div class="form-group select-box">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option disabled selected class="dropdown-title">Semua Maskapai</option>
+                    <option>Garuda Indonesia</option>
+                    <option>Sriwijaya Air</option>
+                    <option>Citilink GS</option>
+                    <option>Lion Air</option>
+                    <option>Citilink Corner</option>
+                    <option>Citilink</option>
+                  </select>
                 </div>
-                <div class="table-dropdown"></div>
-                <div class="table-data-count">
-                    <p class="data-counter">Data 1-20 dari 999</p>
-                </div>
+              </form>
+            </div>     
 
-            </div>
+        </div>
 
           <div class="table-content-wrapper">
 
@@ -261,6 +268,23 @@
 
   </section>
 
+<!-- Javascript -->
+
+<script type="text/javascript">
+  
+  jQuery(document).ready(function ($) {
+
+  $('#exampleFormControlSelect1').select2();
+
+  });
+  
+</script>  
+
+<script src="../../assets/js/navbar.js"></script>
+<script src="../../assets/js/dropdown.js"></script>
+<script src="../../assets/js/dropdown-drop.js"></script>
+<script src="../../assets/js/datepicker.js"></script>
+<script src="../../assets/js/dropdown-search.js"></script>
 
 </div>  
 </body>
