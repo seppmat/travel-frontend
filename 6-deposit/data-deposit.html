@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../assets/js/script.js"></script>
 
 </head>
 <body>
@@ -212,10 +211,52 @@
                     <input type="search" name="" id="" placeholder="filter ...">
                     <i class="fa fa-search"></i>
                 </div>
-                <div class="table-dropdown"></div>
-                <div class="table-data-count">
-                    <p class="data-counter">Data 1-20 dari 999</p>
+                
+                <div class="table-dropdown">
+                  <form>
+                    <div class="form-group select-mini">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option disabled selected class="dropdown-title">Semua Member</option>
+                        <option>1000 - Agent</option>
+                        <option>1000 - Agent</option>
+                        <option>1000 - Agent</option>
+                        <option>1000 - Agent</option>
+                        <option>1000 - Agent</option>
+                        <option>1000 - Agent</option>
+                        <option>1000 - Agent</option>
+                      </select>
+                    </div>                            
+                  </form>
+                </div>  
+
+                <div class="table-search">
+                  <i class="fa fa-search"></i>
+                  <a href="">Cari</a>
                 </div>
+
+            </div>
+
+            <div class="topof-table-content">
+              
+              <div class="table-dropdown">
+                <form>
+                  <div class="form-group select-box">
+                    <select class="form-control" id="exampleFormControlSelect2">
+                      <option disabled selected class="dropdown-title">Halaman</option>
+                      <option>Halaman 1</option>
+                      <option>Halaman 2</option>
+                      <option>Halaman 3</option>
+                      <option>Halaman 4</option>
+                      <option>Halaman 5</option>
+                      <option>Halaman 6</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+
+              <div class="table-data-count">
+                <p class="data-counter">Data 1-20 dari 999</p>
+              </div>
 
             </div>
 
@@ -250,6 +291,27 @@
 
   </section>
 
+  <!-- Javascript -->
+  
+  <script>
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect1').select2();
+  
+    });
+  
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect2').select2();
+  
+    });
+    </script>
+  
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/dropdown.js"></script>
+    <script src="../../assets/js/dropdown-drop.js"></script>
+    <script src="../../assets/js/datepicker.js"></script>
+    <script src="../../assets/js/dropdown-search.js"></script>
 
 </div>  
 </body>

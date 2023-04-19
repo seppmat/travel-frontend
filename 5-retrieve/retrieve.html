@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../assets/js/script.js"></script>
 
 </head>
 <body>
@@ -81,7 +80,7 @@
               <a class="absolute-nav"></a>
             </li>
             <li class="sub-menu">
-              <a href="../../home.html"><i class="fa fa-home"></i><span>Homepage</span></a>
+              <a href="../home.html"><i class="fa fa-home"></i><span>Homepage</span></a>
             </li>
 
             <li class="sub-menu">
@@ -216,13 +215,22 @@
             <form action="">
 
                 <div class="form-wrapper-retrieve">
+
+
                     <div class="form-content-wrapper-retrieve">
-                        <label>Maskapai</label>
-                        <div class="retrieve-content">
-                            <select name="" id="">     
-                                <option value=""></option>                       
-                            </select>
+                      <label>Maskapai</label>
+                      <div class="retrieve-content">
+                        <div class="form-group select-box">
+                          <select class="form-control" id="exampleFormControlSelect5">
+                            <option>Garuda Indonesia</option>
+                            <option>Sriwijaya Air</option>
+                            <option>Citilink GS</option>
+                            <option>Lion Air</option>
+                            <option>Citilink Corner</option>
+                            <option>Citilink</option>
+                          </select>
                         </div>
+                      </div>
                     </div>
                     <div class="form-content-wrapper-retrieve">
                         <label>Kode Booking</label>
@@ -245,17 +253,32 @@
                     <div class="form-content-wrapper-retrieve">
                         <label>Member</label>
                         <div class="retrieve-content">
-                            <select name="" id="">
-                                <option value=""></option>
+                          <div class="form-group select-box">
+                            <select class="form-control" id="exampleFormControlSelect2">
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
                             </select>
+                          </div>  
                         </div>
                     </div>    
                     <div class="form-content-wrapper-retrieve">
-                        <label>Retrieve Ulang</label>
+                        <label>Retrieve Ulang?</label>
                         <div class="retrieve-content">
-                            <input type="text" placeholder="sementara" disabled>
+                          <div class="form-group select-mini">
+                            <select class="form-control" id="exampleFormControlSelect3">                            
+                              <option>TIDAK</option>
+                              <option>YA</option>
+                            </select>
+                          </div>  
                         </div>
                     </div>  
+
+                    
                 </div>                    
 
             </form>
@@ -277,6 +300,46 @@
   </section>
 
 
+  <!-- Javascript -->
+  
+  <script>
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect1').select2();
+  
+    });
+  
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect2').select2();
+  
+    });
+  
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect3').select2();
+  
+    });
+  
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect4').select2();
+  
+    });
+    
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect5').select2();
+  
+    });
+    </script>
+  
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/dropdown.js"></script>
+    <script src="../../assets/js/dropdown-drop.js"></script>
+    <script src="../../assets/js/datepicker.js"></script>
+    <script src="../../assets/js/dropdown-search.js"></script>
+    
 </div>  
 </body>
 </html>

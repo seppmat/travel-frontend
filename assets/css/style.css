@@ -305,9 +305,11 @@ nav > ul.navbar > li .badge{
 
 nav > ul.navbar > li.dorpdown ul.dropdownNav{
     position: absolute;
-    top: 41px;
-    box-shadow: 0 0 1px 0 #888;
-    left: -200px;
+    top: 40px;
+    box-shadow: 0 0 1px 10px rgba(0, 0, 0, rgba(0,0,0,0.075));
+    left: -160px;
+    width: 200px;
+    right: auto;
     background: #fff;
     list-style: none;
     display: none;
@@ -530,6 +532,12 @@ nav>ul.navbar ul.dropdownNav>li>a{
     position: relative;
 }
 
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
 .table-wrapper{    
     margin-top: 30px;
     border: 1px solid #1BBC9B;
@@ -570,12 +578,6 @@ nav>ul.navbar ul.dropdownNav>li>a{
     gap: 20px;
 }
 
-table{
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 10px;
-}
-
 table#rekening-bank-table-content{
     margin: 0 5px 20px 5px;
 }
@@ -606,16 +608,13 @@ table#rekening-bank-table-content{
     padding:2px 30px;
 }
 
-.booking{
-    float: right;
-    margin-top: 20px;
-    margin-right: 20px;
-}
-
 .search-booking-wrapper{
-    height: 8vh;
-    width: 100%;
-    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    padding-right: 20px;
+    justify-content: end;
+    border-top: 1px solid #ddd;
     background: #eee;
 }
 
@@ -632,8 +631,8 @@ table#rekening-bank-table-content{
 }
 
 .table-search-filter{
-    margin-left: 15px;
-    width: 300px;
+    padding-left: 15px;
+    width: 200px;
     display: flex;
     align-items: center;
 }
@@ -641,15 +640,14 @@ table#rekening-bank-table-content{
 .table-search-filter input{
     color: #888;
     border: 1px solid #ccc;
-    padding: 8px 0 9px 20px;
+    padding: 8px 0 8px 20px;
     border-radius: 20px 0 0 20px;
     width: 100%;
 }
 
 .table-search-filter input::placeholder{
     color: #ccc;
-    letter-spacing: 1px;
-    margin-right: 200px;    
+    letter-spacing: 1px;  
 }
 
 .table-search-filter i{
@@ -805,11 +803,7 @@ form{
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0 0 0 10px;
-}
-
-.form-wrapper{
-    display: flex;
+    padding-left: 10px;
 }
 
 .form-wrapper-retrieve{
@@ -822,30 +816,43 @@ form{
     align-items: center;
 }
 
-.form-content-wrapper-retrieve label{
-    width: calc(200% - 2000px);
+.form-wrapper-retrieve label{
+    text-align: right;
+    padding-right: 30px;
+    width: 300px;
 }
 
-.form-content-wrapper-retrieve input{
+.form-content-wrapper-retrieve .retrieve-content .select2{
+    margin-bottom: 10px!important;
+    margin-top: 10px;
+}
+
+.form-content-wrapper-retrieve input[type=text]{
     color: #888;
     border: 1px solid #ccc;
     padding: 10px 0 10px 10px;
     margin-bottom: 5px;
     margin-top: 10px;
-    width: 320px;
+    width: 400px;
 }
 
-.form-content-wrapper-retrieve select{
-
+.form-content-wrapper-retrieve .content-mini input[type=text]{
+    text-align: center;
 }
 
-.form-content-wrapper-retrieve .retrieve-content{
-    
+.table-dropdown form input{
+    color: #888;
+    border: 1px solid #dfdfdf;
+    padding: 10px 0 10px 10px;
+    width: 400px;
+}
+
+.table-dropdown form input::placeholder{
+    color: #888;
 }
 
 .form-content-wrapper-retrieve .content-mini{
     display: flex;
-    width: 320px;
 }
 
 .form-content-wrapper-retrieve .content-mini .disabled{
@@ -854,12 +861,15 @@ form{
     width: 10px;
 }
 
+.form-wrapper-ferry{
+    display: flex;
+}
 
-.form-content-wrapper,
-.form-content-wrapper-mini{
+.form-content-wrapper{
     display: flex;
     flex-direction: column;
-    margin-right: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 form label{
@@ -873,7 +883,6 @@ form input::placeholder{
     letter-spacing: 1px;
 }
 
-.form-content-wrapper-retrieve select,
 .form-content-wrapper select,
 .form-content-wrapper-mini select,
 .form-content-wrapper input[type=date]{
@@ -892,11 +901,6 @@ form input::placeholder{
     border-radius: 2px;
     margin-top: 10px;
     margin-bottom: 20px;
-}
-
-.form-content-wrapper-retrieve select{
-    margin-bottom: 0;
-    margin-left: 20px;
 }
 
 .form-content-wrapper input[type=date]{
@@ -937,8 +941,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* Manual Booking */
 
 .text-manual-booking{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
 }
 
 .text-manual-booking p{
@@ -1015,6 +1018,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-left: 20px;
 }
 
+.table-dropdown form p{
+    color: #888;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
 .topof-table-content input#disabled{
     width: 3%;
     padding: 9px 2px;
@@ -1031,17 +1040,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border: 1px solid #ccc;
 }
 
-.topof-table-content input::placeholder{
-    font-size: 14px;
-    text-align: center;
-}
-
 .calendar {
     width: 150px;
     padding: 9px;
     background: #ffffff;
     font-size: 18px;
   }
+
+#calenderForm{
+    display: flex;
+}
 
 .ui-datepicker {
     background: #fff;
@@ -1138,15 +1146,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-weight: bolder;
 }
 
-.ui-state-active {
-    color: #ffffff;
-    background-color:#1BBC9B;
-    border-radius: 20px;
-}
 
 .ui-datepicker-unselectable .ui-state-default {
     color: #eee;
     border: 2px solid transparent;
+}
+
+.just-a-flex-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.just-a-flex-wrapper i{
+    background: #ddd;
+    padding: 11px 10px 11px 10px;
+    color: #aaa;
+    opacity: .6;
 }
 
 /* Rekonsiliasi */
@@ -1172,7 +1187,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* Dropdown Search */
 
 .table-dropdown{
-    padding-left: 5px;
+    
 }
 
 .form-group{
@@ -1233,6 +1248,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .select2-dropdown{
     box-sizing: border-box;
     border: 1px solid #eee!important;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.075);
     border-radius: 0;  
     background: #fefefe;
 }

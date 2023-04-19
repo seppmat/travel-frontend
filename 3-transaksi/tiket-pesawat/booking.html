@@ -25,7 +25,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../../assets/js/script.js"></script>
+
+    <!-- Date Picker -->
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </head>
 <body>
@@ -206,99 +211,189 @@
 
         <div class="table-content">          
 
-          <div class="table-content-wrapper">
-            
-            <form action="">
+          <div class="table-content-wrapper">          
                 
                 <div class="form-wrapper">
-                    
-                    <div class="form-content-wrapper">
-                        <label>Pilih Maskapai</label>
-                        <select name="" id="">                            
-                            <option value="">Sriwijaya Air</option>
-                            <option value="">CITILINK GS</option>
-                            <option value="">Lion Air</option>
-                            <option value="">CITILINK CORNER</option>
-                            <option value="">Garuda Indonesia</option>
-                            <option value="">CITILINK </option>
-                            <option value="">PELNI BOOK WEB KODE PEMBAYARAN</option>
-                            <option value="">PELNI BOOK HD KODE BOOKING</option>
-                            <option value="">Batam Fast</option>
-                        </select>
-                    </div>
+                  
+                  <div class="form-content-wrapper">
+                  
+                    <div class="topof-table-content">
 
-                    <div class="form-content-wrapper">
-                        <label>Tipe Perjalanan</label>
-                        <div class="blue-button">
-                            <a href="" class="blue-button-active">Sekali Jalan</a>
-                            <a href="">Pulang Pergi</a>
-                        </div>
-                    </div>
+                      <div class="table-dropdown">
+                        <form>
+                          <p>Pilih Maskapai</p>
+                          <div class="form-group select-box">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option disabled selected class="dropdown-title">Semua Maskapai</option>
+                              <option>Garuda Indonesia</option>
+                              <option>Sriwijaya Air</option>
+                              <option>Citilink GS</option>
+                              <option>Lion Air</option>
+                              <option>Citilink Corner</option>
+                              <option>Citilink</option>
+                            </select>
+                          </div>
+                        </form>
+                      </div>     
 
-                </div>
+                      <div class="table-dropdown">
+                        <form>
+                          <p>Tipe Perjalanan</p>
+                            <div class="blue-button">
+                              <a href="" class="blue-button-active">Sekali Jalan</a>
+                              <a href="">Pulang Pergi</a>
+                            </div>
+                        </form>
+                      </div>  
 
-                <div class="form-wrapper">
-                    <div class="form-content-wrapper">
-                        <label>Asal</label>
-                        <select name="" id="">
-                            <option value="">Jakarta (CGK)</option>
-                        </select>
-                    </div>    
-                    <div class="form-content-wrapper">
-                        <label>Tujuan</label>
-                        <select name="" id="">
-                            <option value="">Jakarta (CGK)</option>
-                        </select>
-                    </div>    
-                </div>
+                    </div> 
+                  </div>
 
-                <div class="form-wrapper">
-                    
-                    <div class="form-content-wrapper">
-                        <label>Berangkat</label>
-                        <input type="date" name="" id="">
-                    </div>
+                  <div class="form-content-wrapper">
+                  
+                    <div class="topof-table-content">
 
-                    <div class="form-content-wrapper">
-                        <label>Kembali</label>
-                        <input type="date" name="" id="">
-                    </div>
+                      <div class="table-dropdown">
+                        <form>
+                          <p>Asal</p>
+                          <div class="form-group select-box">
+                            <select class="form-control" id="exampleFormControlSelect2">
+                              <option disabled selected class="dropdown-title">Semua Asal</option>
+                              <option>Jakarta (CGK)</option>
+                              <option>Jambi (DJB)</option>
+                              <option>Gorontalo (GTO)</option>
+                              <option>Jayapura (DJJ)</option>
+                              <option>Kendari (KDI)</option>
+                              <option>Kaimana (KNG)</option>
+                              <option>Batam (BTH)</option>
+                            </select>
+                          </div>
+                        </form>
+                      </div>     
 
-                    <div class="form-content-wrapper-mini">
-                        <label>Dewasa</label>
-                        <select name="" id="">
-                            <option value="">1</option>
-                        </select>
-                    </div>
+                      <div class="table-dropdown">
+                        <form>
+                          <p>Tujuan</p>
+                          <div class="form-group select-box">
+                            <select class="form-control" id="exampleFormControlSelect3">
+                              <option disabled selected class="dropdown-title">Semua Tujuan</option>
+                              <option>Jakarta (CGK)</option>
+                              <option>Jambi (DJB)</option>
+                              <option>Gorontalo (GTO)</option>
+                              <option>Jayapura (DJJ)</option>
+                              <option>Kendari (KDI)</option>
+                              <option>Kaimana (KNG)</option>
+                              <option>Batam (BTH)</option>
+                            </select>
+                          </div>
+                        </form>
+                      </div>  
 
-                    <div class="form-content-wrapper-mini">
-                        <label>Lansia</label>
-                        <select name="" id="">
-                            <option value="">1</option>
-                        </select>
-                    </div>
+                                            
+                      <div class="table-dropdown">
+                        <form>
+                          <p>Dewasa</p>
+                          <div class="form-group select-mini">
+                            <select class="form-control" id="exampleFormControlSelect4">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                            </select>
+                          </div>
+                        </form>
+                      </div>          
+                                            
+                      <div class="table-dropdown">
+                        <form>
+                          <p>Lansia</p>
+                          <div class="form-group select-mini">
+                            <select class="form-control" id="exampleFormControlSelect5">
+                              <option>0</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                            </select>
+                          </div>
+                        </form>
+                      </div>  
 
-                    <div class="form-content-wrapper-mini">
-                        <label>Anak</label>
-                        <select name="" id="">
-                            <option value="">1</option>
-                        </select>
-                    </div>
+                    </div> 
+                  </div>
 
-                    <div class="form-content-wrapper-mini">
-                        <label>Bayi</label>
-                        <select name="" id="">
-                            <option class="option" value="">1</option>
-                            <option value="">1</option>
-                            <option value="">1</option>
-                            <option value="">1</option>
-                        </select>
-                    </div>
+                  <div class="form-content-wrapper">
+                  
+                    <div class="topof-table-content">
+
+                      <div class="table-dropdown" id="calenderForm">
+                        <form>
+                          <p>Kembali</p>
+                          <div class="form-group select-box">
+                            <div class="just-a-flex-wrapper">
+                              <input type="" name="checkIn" id="datepicker" value="" class="calender">
+                              <i class="fa fa-calendar-days"></i>
+                            </div>
+                          </div>
+                        </form>
+                      </div>   
+
+                      <div class="table-dropdown" id="calenderForm">
+                        <form>
+                          <p>Kembali</p>
+                          <div class="form-group select-box">
+                            <div class="just-a-flex-wrapper">
+                              <input type="" name="checkIn" id="datepicker2" value="" class="calender">
+                              <i class="fa fa-calendar-days"></i>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                                                                  
+                      <div class="table-dropdown">
+                        <form>
+                          <p>Anak</p>
+                          <div class="form-group select-mini">
+                            <select class="form-control" id="exampleFormControlSelect6">
+                              <option>0</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                            </select>
+                          </div>
+                        </form>
+                      </div>  
+                                            
+                      <div class="table-dropdown">
+                        <form>
+                          <p>Bayi</p>
+                          <div class="form-group select-mini">
+                            <select class="form-control" id="exampleFormControlSelect7">
+                              <option>0</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                            </select>
+                          </div>
+                        </form>
+                      </div>  
+
+                    </div> 
+                  </div>       
+                  
 
                 </div> 
 
-            </form>
-            
           </div>
 
                 <div class="search-booking-wrapper">
@@ -315,6 +410,60 @@
 
   </section>
 
+<!-- Javascript -->
+
+
+<script type="text/javascript">
+  //<![CDATA[
+  jQuery(document).ready(function ($) {
+
+  $('#exampleFormControlSelect1').select2();
+
+  });
+
+  jQuery(document).ready(function ($) {
+
+    $('#exampleFormControlSelect2').select2();
+  
+    });
+
+  jQuery(document).ready(function ($) {
+
+  $('#exampleFormControlSelect3').select2();
+
+  });  
+
+  jQuery(document).ready(function ($) {
+
+  $('#exampleFormControlSelect4').select2();
+
+  }); 
+
+  jQuery(document).ready(function ($) {
+
+  $('#exampleFormControlSelect5').select2();
+
+  }); 
+
+  jQuery(document).ready(function ($) {
+
+  $('#exampleFormControlSelect6').select2();
+    
+  }); 
+
+  jQuery(document).ready(function ($) {
+
+  $('#exampleFormControlSelect7').select2();
+
+  }); 
+  //]]>
+</script>
+
+<script src="../../assets/js/navbar.js"></script>
+<script src="../../assets/js/dropdown.js"></script>
+<script src="../../assets/js/dropdown-drop.js"></script>
+<script src="../../assets/js/datepicker.js"></script>
+<script src="../../assets/js/dropdown-search.js"></script>
 
 </div>  
 </body>

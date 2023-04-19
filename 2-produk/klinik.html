@@ -216,7 +216,20 @@
                     <input type="search" name="" id="" placeholder="filter ...">
                     <i class="fa fa-search"></i>
                 </div>
-                <div class="table-dropdown"></div>
+                <div class="table-dropdown">
+                  <form>
+                    <div class="select-mini">
+                      <select id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>   
                 <div class="table-data-count">
                     <p class="data-counter">Data 1-20 dari 999</p>
                 </div>
@@ -261,6 +274,23 @@
 
   </section>
 
+<!-- Javascript -->
+
+<script type="text/javascript">
+  
+  jQuery(document).ready(function ($) {
+
+  $('#exampleFormControlSelect1').select2();
+
+  });
+  
+</script>  
+
+<script src="../../assets/js/navbar.js"></script>
+<script src="../../assets/js/dropdown.js"></script>
+<script src="../../assets/js/dropdown-drop.js"></script>
+<script src="../../assets/js/datepicker.js"></script>
+<script src="../../assets/js/dropdown-search.js"></script>
 
 </div>  
 </body>

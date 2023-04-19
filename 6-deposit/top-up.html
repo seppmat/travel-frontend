@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../assets/js/script.js"></script>
 
     <!-- Date Picker -->
     
@@ -218,12 +217,28 @@
 
             <div class="topof-table-content">
 
-                    <label for="">Periode</label>
-                    <input placeholder="from" type="text" name="checkIn" id="datepicker" value="" class="calendar">
-                    <input type="text" disabled id="disabled" placeholder="s/d">
-                    <input placeholder="to" type="text" name="checkIn" id="datepicker2" value="" class="calendar">
+                <label for="">Periode</label>
+                <input placeholder="from" type="text" name="checkIn" id="datepicker" value="" class="calendar">
+                <input type="text" disabled id="disabled" placeholder="s/d">
+                <input placeholder="to" type="text" name="checkIn" id="datepicker2" value="" class="calendar">
 
-                <div class="table-dropdown"></div>
+                <div class="table-dropdown">
+                  <form>
+                    <div class="form-group select-box">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option disabled selected class="dropdown-title">Semua Member</option>
+                        <option>1000 - Agent</option>
+                        <option>1000 - Agent</option>
+                        <option>1000 - Agent</option>
+                        <option>1000 - Agent</option>
+                        <option>1000 - Agent</option>
+                        <option>1000 - Agent</option>
+                        <option>1000 - Agent</option>
+                      </select>
+                    </div>                            
+                  </form>
+                </div>  
+                
                 <div class="table-show">
                     <i class="fa fa-search"></i>
                     <a href="">Tampilkan</a>
@@ -272,7 +287,22 @@
 
   </section>
 
-
+  <!-- Javascript -->
+  
+  <script>
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect1').select2();
+  
+    });
+    </script>
+  
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/dropdown.js"></script>
+    <script src="../../assets/js/dropdown-drop.js"></script>
+    <script src="../../assets/js/datepicker.js"></script>
+    <script src="../../assets/js/dropdown-search.js"></script>
+    
 </div>  
 </body>
 </html>

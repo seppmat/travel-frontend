@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../../assets/js/script.js"></script>
 
 </head>
 <body>
@@ -206,51 +205,113 @@
 
         <div class="table-content">          
 
-          <div class="table-content-wrapper">
-            
-            <form action="">
+          <div class="table-content-wrapper">          
 
-                <div class="form-wrapper">
+                <div class="form-wrapper-ferry">
+
                     <div class="form-content-wrapper">
-                        <label>Tipe Ticket</label>
-                        <select name="" id="">     
-                            <option value="">Pilih Tiket</option>                       
-                        </select>
+                      <div class="table-dropdown">
+                        <form>
+                          <p>Pilih Tiket</p>
+                          <div class="form-group select-box">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option disabled selected class="dropdown-title">Pilih Tiket</option>
+                              <option>BTM E-VCR (1-WAY ALLPORT) -------- IDR 390000.00 (Rp. 400.000)</option>
+                              <option>BTM E-VCR (2-WAY) -------- IDR 680000.00 (Rp. 700.000)</option>                              
+                              <option>TPI E-VCR (1-WAY) ID Depart -------- IDR 415000.00 (Rp. 430.000)</option>
+                              <option>TPI E-VCR (1-WAY) SG Depart -------- IDR 505000.00 (Rp. 520.000)</option>
+                              <option>TPI E-VCR (2-WAY) -------- IDR 830000.00 (Rp. 860.000)</option>
+                            </select>
+                          </div>
+                        </form>
+                      </div>  
                     </div>
+
                     <div class="form-content-wrapper">
-                        <label>Jumlah Penumpang</label>
-                        <select name="" id="">
-                            <option value=""></option>
-                        </select>
+                      <div class="table-dropdown">
+                        <form>
+                          <p>Jumlah Penumpang</p>
+                          <div class="form-group select-mini">
+                            <select class="form-control" id="exampleFormControlSelect2">
+                              <option>1 Penumpang</option>
+                              <option>2 Penumpang</option>
+                              <option>3 Penumpang</option>
+                            </select>
+                          </div>
+                        </form>
+                      </div>  
                     </div>    
+
                     <div class="form-content-wrapper">
-                        <label>Member</label>
-                        <select name="" id="">
-                            <option value=""></option>
-                        </select>
-                    </div>    
+                      <div class="table-dropdown">
+                        <form>
+                          <p>Member</p>
+                          <div class="form-group select-box">
+                            <select class="form-control" id="exampleFormControlSelect3">
+                              <option disabled selected class="dropdown-title">Semua Member</option>
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
+                            </select>
+                          </div>                            
+                        </form>
+                      </div>    
+                    </div>  
+                    
+                    
                 </div>
-
-
-            </form>
             
           </div>
 
-                <div class="search-booking-wrapper">
-                    <div class="table-search booking">
-                        <i class="fa fa-ticket"></i>
-                        <a href="">Booking</a>
-                    </div>
-                </div>   
+          <div class="search-booking-wrapper">
+              <div class="table-search booking">
+                  <i class="fa fa-ticket"></i>
+                  <a href="">Booking</a>
+              </div>
+          </div>   
           
-          </div>
-        </div>
       </div>
-     </div>
+    </div>
+  </div>
+</div>
 
-  </section>
+</section>
+
+<!-- Javascript -->
 
 
+<script type="text/javascript">
+  //<![CDATA[
+  jQuery(document).ready(function ($) {
+
+  $('#exampleFormControlSelect1').select2();
+
+  });
+
+  jQuery(document).ready(function ($) {
+
+    $('#exampleFormControlSelect2').select2();
+  
+    });
+
+  jQuery(document).ready(function ($) {
+
+  $('#exampleFormControlSelect3').select2();
+
+  });  
+  //]]>
+</script>
+
+<script src="../../assets/js/navbar.js"></script>
+<script src="../../assets/js/dropdown.js"></script>
+<script src="../../assets/js/dropdown-drop.js"></script>
+<script src="../../assets/js/datepicker.js"></script>
+<script src="../../assets/js/dropdown-search.js"></script>
+  
 </div>  
 </body>
 </html>

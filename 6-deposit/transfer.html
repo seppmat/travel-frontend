@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../assets/js/script.js"></script>
 
 </head>
 <body>
@@ -210,38 +209,45 @@
             <form action="">
 
                 <div class="form-wrapper-retrieve">
-                    <div class="form-content-wrapper-retrieve">
+                  
+                      <div class="form-content-wrapper-retrieve">
                         <label>Tujuan Transfer</label>
-                        <div class="retrieve-content" style="margin-right: auto; padding-right: 90px;">
-                            <input type="radio" name="" id="">
+                        <div class="retrieve-content">
+                            <input type="radio" name="" id="" checked>
                             <label for="">Umum</label>
                             <input type="radio" name="" id="">
                             <label for="">Member</label>
                         </div>
-                    </div>
-                    <div class="form-content-wrapper-retrieve">
-                        <label>Member</label>
-                        <div class="retrieve-content">
-                            <select name="" id="">
-                                <option value=""></option>
-                            </select>
-                        </div>
-                    </div>    
-                    <div class="form-content-wrapper-retrieve">
-                        <div class="retrieve-content">
-                            <div class="content-mini">
-                                <input type="text" placeholder="ID Tujuan">
-                                <input type="text" class="disabled" placeholder="-" disabled>
-                                <input type="text" placeholder="Username Tujuan">
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="form-content-wrapper-retrieve">
-                        <label>Keterangan</label>
-                        <div class="retrieve-content">
-                            <input type="text"> 
-                        </div>
-                    </div>    
+                      </div>
+
+                      <div class="form-content-wrapper-retrieve">
+                          <label></label>
+                          <div class="retrieve-content">
+                            <div class="table-dropdown">
+                                <div class="form-group select-box">
+                                  <div class="content-mini">
+                                    <input type="text" placeholder="ID Tujuan">
+                                    <input type="text" class="disabled" placeholder="-" disabled>
+                                    <input type="text" placeholder="Username Tujuan">
+                                </div>
+                                </div>                                                        
+                            </div>  
+                          </div>
+                      </div>    
+
+                      <div class="form-content-wrapper-retrieve">
+                          <label>Jumlah Deposit</label>
+                          <div class="retrieve-content">
+                              <input type="text" placeholder="Rp. "> 
+                          </div>
+                      </div>  
+                      
+                      <div class="form-content-wrapper-retrieve">
+                          <label>Keterangan</label>
+                          <div class="retrieve-content">
+                              <input type="text"> 
+                          </div>
+                      </div>
 
                 </div>                    
 
@@ -263,6 +269,13 @@
 
   </section>
 
+  <!-- Javascript -->
+  
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/dropdown.js"></script>
+    <script src="../../assets/js/dropdown-drop.js"></script>
+    <script src="../../assets/js/datepicker.js"></script>
+    <script src="../../assets/js/dropdown-search.js"></script>
 
 </div>  
 </body>
