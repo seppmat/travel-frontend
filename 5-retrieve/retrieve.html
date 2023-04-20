@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Retrieve</title>
+    
+    <!-- DESC -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- ICON -->
+    <link href="" rel="icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- JS -->
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="container-main">
+
+  <section class="header-section">
+
+    <div id="header"> 
+      <nav>
+
+        <button id="sidebarCollapse" type="button"><i class="fal fa-bars"></i></button>  
+
+        <ul class="navbar right">
+             
+          <li class="dorpdown"><a href="#"><i class="fal fa-bell" ></i><span class="badge">12</span></a>
+           <ul class="dropdownNav rightAlign">
+              <li><a href="#">You have 4 notifiction</a></li> 
+                <hr/>
+              <li><a href="#">Please come to me</a></li>
+              <li><a href="#">See All notifiction</a></li>
+            </ul>  
+          </li>
+
+          <li class="dorpdown"> <a href="#" > <i class="fal fa-envelope" ></i> <span class="badge">4</span> </a>
+            <ul class="dropdownNav rightAlign"> 
+              <li><a href="#">View All Message</a></li>             
+            </ul>
+          </li>
+           
+          <li class="dorpdown"> <a href="#"><i class="fal fa-user"></i></a>
+           <ul class="dropdownNav rightAlign profile">
+             <li><a href="#"><i class="fal fa-user" aria-hidden="true"></i> My Profile </a></li>
+             <li><a href="#"><i class="fal fa-cog" aria-hidden="true"></i> Account Setting</a></li>
+            </ul>    
+          </li>
+
+          <li class="dorpdown"> <a href=""><i class="fal fa-sign-out"></i></a></li>
+
+        </ul>
+
+      </nav>
+    </div>
+
+  </section>  
+
+  <section class="navbar-section">
+
+       <div class="vertical-nav" id="sidebar">
+        
+        <div id="leftside-navigation" class="nano">
+          <ul class="nano-content">
+            <li class="sub-menu">
+              <a class="absolute-nav"></a>
+            </li>
+            <li class="sub-menu">
+              <a href="../home.html"><i class="fa fa-home"></i><span>Homepage</span></a>
+            </li>
+
+            <li class="sub-menu">
+              <a href="javascript:void(0);"><i class="fa fa-globe"></i><span>Pengelolaan</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+              <ul class="sub-menu-content">
+  
+                <li><a href="../1-pengelolaan/paket.html"><i class="fa-brands fa-connectdevelop"></i>Paket</a></li>
+                <li><a href="../1-pengelolaan/karyawan.html"><i class="fa fa-users"></i>Karyawan</a></li>
+                <li><a href="../1-pengelolaan/member.html"><i class="fa fa-sitemap"></i>Member</a></li>
+                <li><a href="../1-pengelolaan/operator.html"><i class="fa fa-user-secret"></i>Operator</a></li>
+                <li><a href="../1-pengelolaan/user.html"><i class="fa fa-street-view"></i>User</a></li>
+                <li><a href="../1-pengelolaan/rekening-bank.html"><i class="fa fa-credit-card"></i>Rekening Bank</a></li>
+                <li><a href="../1-pengelolaan/berita.html"><i class="fa fa-newspaper"></i>Berita</a></li>
+              </ul>
+            </li>
+
+            <li class="sub-menu">
+              <a href="javascript:void(0);"><i class="fal fa-puzzle-piece"></i><span>Produk</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+              <ul class="sub-menu-content">
+  
+                <li class="sub-menu-sub">
+                  <a href="javascript:void(0);"><i class="fa fa-plane"></i><span>Flight</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                  <ul class="sub-menu-sub-content">
+                    <li><a href="../2-produk/flight/kota-bandara.html"><i class="fa fa-building-o"></i>Kota Bandara</a></li>
+                    <li><a href="../2-produk/flight/maskapai.html"><i class="fa-solid fa-paper-plane"></i>Maskapai</a></li>
+                    <li><a href="../2-produk/flight/akun-maskapai.html"><i class="fa fa-key"></i>Akun Maskapai</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                    <a href="../2-produk/klinik.html">
+                    <i class="fa-solid fa-expand"></i>Klinik</a>
+                </li>
+  
+              </ul>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:void(0);"><i class="fal fa fa-lightbulb-o"></i><span>Transaksi</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+              <ul class="sub-menu-content">
+      
+                <li class="sub-menu-sub">
+                  <a href="javascript:void(0);"><i class="fa fa-fighter-jet"></i><span>Tiket Pesawat</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                  <ul class="sub-menu-sub-content">
+                    <li><a href="../3-transaksi/tiket-pesawat/order-umum.html"><i class="fa-brands fa-dropbox"></i>Order Umum</a></li>
+                    <li><a href="../3-transaksi/tiket-pesawat/booking.html"><i class="fa fa-bookmark"></i>Booking</a></li>
+                    <li><a href="../3-transaksi/tiket-pesawat/manual-booking.html"><i class="fa fa-compass"></i>Manual Booking</a></li>
+                    <li><a href="../3-transaksi/tiket-pesawat/manual-issued.html"><i class="fa-solid fa-suitcase"></i>Manual Issued</a></li>
+                    <li><a href="../3-transaksi/tiket-pesawat/refund-ticket.html"><i class="fa-solid fa-reply"></i>Refund Ticket</a></li>
+                  </ul>
+                </li>
+
+                <li class="sub-menu-sub">
+                  <a href="javascript:void(0);"><i class="fa fa-ship"></i><span>Tiket Ferry</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                  <ul class="sub-menu-sub-content">
+                    <li><a href="../3-transaksi/tiket-ferry/booking-ferry.html"><i class="fa fa-ticket"></i>Booking Ferry</a></li>
+                    <li><a href="../3-transaksi/tiket-ferry/history.html"><i class="fa fa-history"></i>History</a></li>>
+                  </ul>
+                </li>
+                
+              </ul>
+            </li>
+            <li class="sub-menu">
+              <a href="../4-histori-booking/history-booking.html"><i class="fa fa-calculator"></i><span>Histori Booking</span></a>
+            </li>
+            <li class="sub-menu active">
+              <a href="retrieve.html"><i class="fal fa-ticket"></i><span>Retrieve</span></a>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:void(0);"><i class="fal fa-gem"></i><span>Deposit</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+              <ul class="sub-menu-content">
+  
+                <li><a href="../6-deposit/data-deposit.html"><i class="fa fa-database"></i>Data Deposit</a></li>
+                <li><a href="../6-deposit/top-up.html"><i class="fa fa-dollar"></i>Top Up</a></li>
+                <li><a href="../6-deposit/konfirmasi-top-up.html"><i class="fa-brands fa-get-pocket"></i>Konfirmasi Top Up</a></li>
+                <li><a href="../6-deposit/penyeimbang-deposit.html"><i class="fa fa-balance-scale"></i>Penyeimbang Deposit</a></li>
+                <li><a href="../6-deposit/transfer.html"><i class="fa fa-share-square-o"></i>Transfer</a></li>
+  
+              </ul>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:void(0);"><i class="fal fa-star"></i><span>Laporan</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+              <ul class="sub-menu-content">
+  
+                <li><a href="../7-laporan/mutasi.html"><i class="fa fa-exchange"></i>Mutasi</a></li>
+                <li><a href="../7-laporan/penjualan.html"><i class="fa fa-signal"></i>Penjualan</a></li>
+                <li><a href="../7-laporan/komisi.html"><i class="fa fa-hourglass-half"></i>Komisi</a></li>
+                <li><a href="../7-laporan/rekonsiliasi.html"><i class="fa fa-exchange"></i>Rekonsiliasi</a></li>
+  
+              </ul>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:void(0);"><i class="fal fa-sign-out"></i><span>Logout</span></a>
+            </li>
+          </ul>
+        </div>
+
+       </div>
+
+  </section>
+
+  <section class="page-content content-section" id="content">
+
+    <div class="nav-mark">
+        <p><a href="">Home</a></p></p><i class="fal fa-angle-right"></i><p>Retrieve</p>
+    </div>
+        <div class="hr">
+          <hr>
+        </div>
+     <div class="sub-content">
+        <h2>Retrieve Kode Booking</h2>
+     </div>   
+
+     <div class="table">
+      <div class="table-wrapper">
+        <div class="table-header">
+          <div class="left-side">
+            <i class="fa fa-sliders"></i>
+            <a>FORM PENGAMBILAN DATA BOOKING</a>
+          </div>
+        </div>
+
+        <div class="table-content">          
+
+            <div class="text-warning">
+
+                <h5>Informasi mengenai Retrieve</h5>
+                    <p>Form di bawah ini merupakan form untuk mengambil data langsung dari maskapai apabila Anda melakukan booking manual (booking di portal maskapai langsung). Apabila Anda mencoba retrieve beberapa kali dan data booking belum bisa didapatkan, silahkan menggunakan <strong>Retrieve Manual</strong> untuk menginputkan data booking secara manual.</p>
+              </div>
+
+          <div class="table-content-wrapper">
+            
+            <form action="">
+
+                <div class="form-wrapper-retrieve">
+
+
+                    <div class="form-content-wrapper-retrieve">
+                      <label>Maskapai</label>
+                      <div class="retrieve-content">
+                        <div class="form-group select-box">
+                          <select class="form-control" id="exampleFormControlSelect5">
+                            <option>Garuda Indonesia</option>
+                            <option>Sriwijaya Air</option>
+                            <option>Citilink GS</option>
+                            <option>Lion Air</option>
+                            <option>Citilink Corner</option>
+                            <option>Citilink</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-content-wrapper-retrieve">
+                        <label>Kode Booking</label>
+                        <div class="retrieve-content">
+                            <input type="text"> 
+                        </div>
+                    </div>    
+                    <div class="form-content-wrapper-retrieve">
+                        <label>Nama Pemesan</label>
+                        <div class="retrieve-content">
+                            <input type="text">
+                        </div>
+                    </div>    
+                    <div class="form-content-wrapper-retrieve">
+                        <label>Nomor Hp Pemesan</label>
+                        <div class="retrieve-content">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="form-content-wrapper-retrieve">
+                        <label>Member</label>
+                        <div class="retrieve-content">
+                          <div class="form-group select-box">
+                            <select class="form-control" id="exampleFormControlSelect2">
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
+                              <option>1000 - Agent</option>
+                            </select>
+                          </div>  
+                        </div>
+                    </div>    
+                    <div class="form-content-wrapper-retrieve">
+                        <label>Retrieve Ulang?</label>
+                        <div class="retrieve-content">
+                          <div class="form-group select-mini">
+                            <select class="form-control" id="exampleFormControlSelect3">                            
+                              <option>TIDAK</option>
+                              <option>YA</option>
+                            </select>
+                          </div>  
+                        </div>
+                    </div>  
+
+                    
+                </div>                    
+
+            </form>
+            
+          </div>
+
+                <div class="search-booking-wrapper">
+                    <div class="table-search booking">
+                        <i class="fa fa-check"></i>
+                        <a href="">Ambil Data Sekarang</a>
+                    </div>
+                </div>   
+          
+          </div>
+        </div>
+      </div>
+     </div>
+
+  </section>
+
+
+  <!-- Javascript -->
+  
+  <script>
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect1').select2();
+  
+    });
+  
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect2').select2();
+  
+    });
+  
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect3').select2();
+  
+    });
+  
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect4').select2();
+  
+    });
+    
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect5').select2();
+  
+    });
+    </script>
+  
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/dropdown.js"></script>
+    <script src="../assets/js/dropdown-drop.js"></script>
+    <script src="../assets/js/datepicker.js"></script>
+    <script src="../assets/js/dropdown-search.js"></script>
+    
+</div>  
+</body>
+</html>
