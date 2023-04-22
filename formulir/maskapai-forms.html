@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Deposit - Top Up</title>
+    <title>Produk - Flight - Maskapai</title>
     
     <!-- DESC -->
     <meta name="description" content="">
@@ -25,12 +25,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Date Picker -->
-    
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </head>
 <body>
@@ -93,7 +87,7 @@
               <a href="javascript:void(0);"><i class="fa fa-globe"></i><span>Pengelolaan</span><i class="arrow fa fa-angle-right pull-right"></i></a>
               <ul class="sub-menu-content">
   
-                <li><a href="paket.html"><i class="fa-brands fa-connectdevelop"></i>Paket</a></li>
+                <li><a href="../1-pengelolaan/paket.html"><i class="fa-brands fa-connectdevelop"></i>Paket</a></li>
                 <li><a href="../1-pengelolaan/karyawan.html"><i class="fa fa-users"></i>Karyawan</a></li>
                 <li><a href="../1-pengelolaan/member.html"><i class="fa fa-sitemap"></i>Member</a></li>
                 <li><a href="../1-pengelolaan/operator.html"><i class="fa fa-user-secret"></i>Operator</a></li>
@@ -104,7 +98,7 @@
               </ul>
             </li>
 
-            <li class="sub-menu">
+            <li class="sub-menu active">
               <a href="javascript:void(0);"><i class="fal fa-puzzle-piece"></i><span>Produk</span><i class="arrow fa fa-angle-right pull-right"></i></a>
               <ul class="sub-menu-content">
   
@@ -112,7 +106,7 @@
                   <a href="javascript:void(0);"><i class="fa fa-plane"></i><span>Flight</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                   <ul class="sub-menu-sub-content">
                     <li><a href="../2-produk/flight/kota-bandara.html"><i class="fa fa-building-o"></i>Kota Bandara</a></li>
-                    <li><a href="../2-produk/flight/maskapai.html"><i class="fa-solid fa-paper-plane"></i>Maskapai</a></li>
+                    <li class="sub-active"><a href="../2-produk/flight/maskapai.html"><i class="fa-solid fa-paper-plane"></i>Maskapai</a></li>
                     <li><a href="../2-produk/flight/akun-maskapai.html"><i class="fa fa-key"></i>Akun Maskapai</a></li>
                   </ul>
                 </li>
@@ -155,12 +149,12 @@
             <li class="sub-menu">
               <a href="../5-retrieve/retrieve.html"><i class="fal fa-ticket"></i><span>Retrieve</span></a>
             </li>
-            <li class="sub-menu active">
+            <li class="sub-menu">
               <a href="javascript:void(0);"><i class="fal fa-gem"></i><span>Deposit</span><i class="arrow fa fa-angle-right pull-right"></i></a>
               <ul class="sub-menu-content">
   
                 <li><a href="../6-deposit/data-deposit.html"><i class="fa fa-database"></i>Data Deposit</a></li>
-                <li class="sub-active"><a href="../6-deposit/top-up.html"><i class="fa fa-dollar"></i>Top Up</a></li>
+                <li><a href="../6-deposit/top-up.html"><i class="fa fa-dollar"></i>Top Up</a></li>
                 <li><a href="../6-deposit/konfirmasi-top-up.html"><i class="fa-brands fa-get-pocket"></i>Konfirmasi Top Up</a></li>
                 <li><a href="../6-deposit/penyeimbang-deposit.html"><i class="fa fa-balance-scale"></i>Penyeimbang Deposit</a></li>
                 <li><a href="../6-deposit/transfer.html"><i class="fa fa-share-square-o"></i>Transfer</a></li>
@@ -191,97 +185,213 @@
   <section class="page-content content-section" id="content">
 
     <div class="nav-mark">
-        <p><a href="">Home</a></p><i class="fal fa-angle-right"></i><p>Deposit</p><i class="fal fa-angle-right"></i><p>Top  Up</p>
+      <p><a href="">Home</a></p><i class="fal fa-angle-right"></i><p>Produk</p><i class="fal fa-angle-right"></i><p>Flight</p><i class="fal fa-angle-right"></i><p>Maskapai</p>
     </div>
-        <div class="hr">
-          <hr>
-        </div>
+    <div class="hr">
+        <hr>
+    </div>
      <div class="sub-content">
-        <h2>Top Up Member</h2>
+        <h2>Maskapai</h2>
      </div>   
 
-     <div class="table">
-      <div class="table-wrapper">
-        <div class="table-header">
+     <div class="forms">
+      <div class="forms-wrapper">
+
+        <div class="forms-header">
           <div class="left-side">
             <i class="fa fa-sliders"></i>
-            <a>Data Status Top Up</a>
+            <a>Form Maskapai</a>
           </div>
         </div>
 
-        <div class="table-content">
+        <div class="forms-content">
+          <div class="forms-content-wrapper">
 
-            <div class="topof-table-content">
+                <form action="">
 
-                <label for="">Periode</label>
-                <input placeholder="from" type="text" name="checkIn" id="datepicker" value="" class="calendar">
-                <input type="text" disabled id="disabled" placeholder="s/d">
-                <input placeholder="to" type="text" name="checkIn" id="datepicker2" value="" class="calendar">
+                    <div class="form-wrapper-retrieve">
 
-                <div class="table-dropdown">
-                  <form>
-                    <div class="form-group select-box">
-                      <select class="form-control" id="exampleFormControlSelect1">
-                        <option disabled selected class="dropdown-title">Semua Member</option>
-                        <option>1000 - Agent</option>
-                        <option>1000 - Agent</option>
-                        <option>1000 - Agent</option>
-                        <option>1000 - Agent</option>
-                        <option>1000 - Agent</option>
-                        <option>1000 - Agent</option>
-                        <option>1000 - Agent</option>
-                      </select>
-                    </div>                            
-                  </form>
-                </div>  
-                
-                <div class="table-show">
-                    <i class="fa fa-search"></i>
-                    <a href="">Tampilkan</a>
-                </div>
+                      <div class="form-content-wrapper-retrieve">
+                        <div class="form-content-flexside">
 
-            </div>
+                          <div class="retrieve-content">
+                            <label>Nama Pendek</label>
+                            <div class="retrieve-content">
+                                <input type="text"> 
+                            </div>
+                          </div>
+                          
+                          <div class="retrieve-content">
+                            <label>Nama Lengkap</label>
+                            <div class="retrieve-content">
+                                <input type="text"> 
+                            </div>
+                          </div>
 
-          <div class="table-content-wrapper">
-            <table>
+                        </div>
+                      </div>                
+                        
+                    </div> 
+                    
+                    <div class="form-wrapper-retrieve">
+
+                      <div class="form-content-wrapper-retrieve">
+                        <div class="form-content-flexside">
+
+                          <div class="retrieve-content">
+                            <label>URL Booking</label>
+                            <div class="retrieve-content">
+                                <input type="text"> 
+                            </div>
+                          </div>
+                          
+                          <div class="retrieve-content">
+                            <label>URL Icon</label>
+                            <div class="retrieve-content">
+                                <input type="text"> 
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>                
+                        
+                    </div>  
+
+                    <div class="form-wrapper-retrieve">
+
+                      <div class="form-content-wrapper-retrieve">
+                        <div class="form-content-flexside">
+
+                          <div class="retrieve-content">
+                            <label>Auto Booking</label>
+                            <div class="form-group select-box">
+                              <select class="form-control" id="exampleFormControlSelect1">
+                                <option>YA</option>
+                                <option>TIDAK</option>
+                              </select>
+                            </div>  
+                          </div>
+                          
+                          <div class="retrieve-content">
+                            <label>Auto Issued</label>
+                            <div class="form-group select-box">
+                              <select class="form-control" id="exampleFormControlSelect2">
+                                <option>YA</option>
+                                <option>TIDAK</option>
+                              </select>
+                            </div>  
+                          </div>
+
+                        </div>
+                      </div>                
+                        
+                    </div>    
+                    
+                    <div class="form-wrapper-retrieve">
+
+                      <div class="form-content-wrapper-retrieve">
+                        <div class="form-content-flexside">
+
+                          <div class="retrieve-content">
+                            <label>NTA</label>
+                            <div class="form-group select-box">
+                              <select class="form-control" id="exampleFormControlSelect3">
+                                <option>YA</option>
+                                <option>TIDAK</option>
+                              </select>
+                            </div>  
+                          </div>
+                          
+                          <div class="retrieve-content">
+                            <label>Diskon (pax / rute)</label>
+                            <div class="retrieve-content">
+                                <input type="text"> 
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>                
+                        
+                    </div>
+
+                    <div class="form-wrapper-retrieve">
+
+                      <div class="form-content-wrapper-retrieve">
+                        <div class="form-content-flexside">
+
+                          <div class="retrieve-content">
+                            <label>Insentif</label>
+                            <div class="retrieve-content">
+                                <input type="text"> 
+                            </div>
+                          </div>
+
+                          <div class="retrieve-content">
+                            <label>Insentif Tipe</label>
+                            <div class="form-group select-box">
+                              <select class="form-control" id="exampleFormControlSelect4">
+                                <option>Tidak Masuk NTA</option>
+                                <option>Masuk NTA</option>
+                              </select>
+                            </div>  
+                          </div>                          
+
+                        </div>
+                      </div>                
+                        
+                    </div>
+
+                    <div class="form-wrapper-retrieve">
+
+                      <div class="form-content-wrapper-retrieve">
+                        <div class="form-content-flexside">
+
+                          <div class="retrieve-content">
+                            <label>Single Login</label>
+                            <div class="form-group select-box">
+                              <select class="form-control" id="exampleFormControlSelect5">
+                                <option>YA</option>
+                                <option>TIDAK</option>
+                              </select>
+                            </div>  
+                          </div>
+                          
+                          <div class="retrieve-content">
+                            <label>Aktif</label>
+                            <div class="form-group select-box">
+                              <select class="form-control" id="exampleFormControlSelect6">
+                                <option>YA</option>
+                                <option>TIDAK</option>
+                              </select>
+                            </div>  
+                          </div>
+
+                        </div>
+                      </div>                
+                        
+                    </div> 
+
+                </form>
+            </div>    
               
-              <tr>
-                <th>Member</th>
-                <th>Nomor Tiket</th>
-                <th>Konfirmasi</th>
-                <th>Rekening Tujuan</th>
-                <th>Keterangan</th>
-                <th>Jumlah</th>
-                <th>Status</th>
-              </tr>
-
-              <tr>
-                <td>1000</td>
-                <td>123456789</td>
-                <td>16/04/2023 13:46:32</td>
-                <td>MANDIRI - PUNG (123456789)</td>
-                <td>
-                  <p>Metode : INTERNET BANKING</p>
-                  <p>Tanggal : 16 April 2023</p>
-                </td>
-                <td><strong>5,000,641	</strong></td>
-                <td>
-                  <a href="" class="status-true"><i class="fa fa-check"></i>Diterima</a>
-                </td>
-               
-              </tr>
-
-            </table>
-
-          </div>
-
+          </div>      
           
-          </div>
+                <div class="search-booking-wrapper">
+                    <div class="table-search-false booking">
+                        <i class="fa fa-undo"></i>
+                        <a href="">Batal</a>
+                    </div>
+                    <div class="table-search booking">
+                      <i class="fa fa-check"></i>
+                      <a href="">Simpan</a>
+                  </div>
+                </div>     
         </div>
-      </div>
-     </div>
 
-  </section>
+     </div>
+    </div>
+
+</section>
 
   <!-- Javascript -->
   
@@ -291,6 +401,36 @@
     $('#exampleFormControlSelect1').select2();
   
     });
+  
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect2').select2();
+  
+    });
+
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect3').select2();
+  
+    });
+  
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect4').select2();
+  
+    });
+
+    jQuery(document).ready(function ($) {
+
+    $('#exampleFormControlSelect5').select2();
+  
+    });
+  
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect6').select2();
+  
+    });
     </script>
   
     <script src="../assets/js/navbar.js"></script>
@@ -298,7 +438,7 @@
     <script src="../assets/js/dropdown-drop.js"></script>
     <script src="../assets/js/datepicker.js"></script>
     <script src="../assets/js/dropdown-search.js"></script>
-    
+
 </div>  
 </body>
 </html>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pengelolaan - Karyawan</title>
+    <title>Pengelolaan - Rekening Bank</title>
     
     <!-- DESC -->
     <meta name="description" content="">
@@ -87,13 +87,13 @@
               <a href="javascript:void(0);"><i class="fa fa-globe"></i><span>Pengelolaan</span><i class="arrow fa fa-angle-right pull-right"></i></a>
               <ul class="sub-menu-content">
   
-                <li><a href="paket.html"><i class="fa-brands fa-connectdevelop"></i>Paket</a></li>
-                <li class="sub-active"><a href="karyawan.html"><i class="fa fa-users"></i>Karyawan</a></li>
-                <li><a href="member.html"><i class="fa fa-sitemap"></i>Member</a></li>
-                <li><a href="operator.html"><i class="fa fa-user-secret"></i>Operator</a></li>
-                <li><a href="user.html"><i class="fa fa-street-view"></i>User</a></li>
-                <li><a href="rekening-bank.html"><i class="fa fa-credit-card"></i>Rekening Bank</a></li>
-                <li><a href="berita.html"><i class="fa fa-newspaper"></i>Berita</a></li>
+                <li><a href="../1-pengelolaan/paket.html"><i class="fa-brands fa-connectdevelop"></i>Paket</a></li>
+                <li><a href="../1-pengelolaan/karyawan.html"><i class="fa fa-users"></i>Karyawan</a></li>
+                <li><a href="../1-pengelolaan/member.html"><i class="fa fa-sitemap"></i>Member</a></li>
+                <li><a href="../1-pengelolaan/operator.html"><i class="fa fa-user-secret"></i>Operator</a></li>
+                <li><a href="../1-pengelolaan/user.html"><i class="fa fa-street-view"></i>User</a></li>
+                <li class="sub-active"><a href="../1-pengelolaan/rekening-bank.html"><i class="fa fa-credit-card"></i>Rekening Bank</a></li>
+                <li><a href="../1-pengelolaan/berita.html"><i class="fa fa-newspaper"></i>Berita</a></li>
   
               </ul>
             </li>
@@ -185,114 +185,127 @@
   <section class="page-content content-section" id="content">
 
     <div class="nav-mark">
-        <p><a href="">Home</a></p><i class="fal fa-angle-right"></i><p>Pengelolaan</p><i class="fal fa-angle-right"></i><p>Karyawan</p>
+        <p><a href="">Home</a></p><i class="fal fa-angle-right"></i><p>Pengelolaan</p><i class="fal fa-angle-right"></i><p>Rekening Bank</p>
     </div>
-        <div class="hr">
-          <hr>
-        </div>
+    <div class="hr">
+        <hr>
+    </div>
      <div class="sub-content">
-        <h2>Karyawan</h2>
+        <h2>Rekening Bank</h2>
      </div>   
 
-     <div class="table">
-      <div class="table-wrapper">
-        <div class="table-header">
+     <div class="forms">
+      <div class="forms-wrapper">
+
+        <div class="forms-header">
           <div class="left-side">
             <i class="fa fa-sliders"></i>
-            <a>Data Karyawan</a>
-          </div>
-          <div class="right-side">            
-            <a href="../formulir/karyawan-form.html"><i class="fa fa-plus-circle"></i>Karyawan</a>
+            <a>Form Rekening</a>
           </div>
         </div>
 
-        <div class="table-content">
+        <div class="forms-content">
+          <div class="forms-content-wrapper">                    
 
-            <div class="topof-table-content">
+                <div class="forms-body">
+      
+                      <form action="">
+      
+                          <div class="form-wrapper-retrieve">
+      
+                              <div class="form-content-wrapper-retrieve">
+                                <label>Bank</label>
+                                <div class="retrieve-content">
+                                  <div class="form-group select-box">
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                      <option disabled selected>--- Pilih Bank ---</option>
+                                      <option>Mandiri</option>
+                                      <option>BCA</option>
+                                      <option>BRI</option>
+                                      <option>BNI</option>
+                                      <option>BII</option>
+                                      <option>BSM</option>
+                                      <option>CIMB</option>
+                                      <option>Permata</option>
+                                    </select>
+                                  </div>  
+                                </div>
+                              </div>  
+                              <div class="form-content-wrapper-retrieve">
+                                <label>Cabang</label>
+                                <div class="retrieve-content">
+                                    <input type="text">
+                                </div>  
+                              </div>   
+                              <div class="form-content-wrapper-retrieve">
+                                  <label>No. Rekening</label>
+                                  <div class="retrieve-content">
+                                      <input type="text">
+                                  </div>  
+                              </div>    
+                              <div class="form-content-wrapper-retrieve">
+                                  <label>Atas Nama</label>
+                                  <div class="retrieve-content">
+                                      <input type="text">
+                                  </div>
+                              </div>
+                              <div class="form-content-wrapper-retrieve">
+                                <label>Aktif</label>
+                                <div class="retrieve-content">
+                                  <div class="form-group select-box">
+                                    <select class="form-control" id="exampleFormControlSelect2">
+                                      <option>Tidak</option>
+                                      <option>Ya</option>
+                                    </select>
+                                  </div>  
+                                </div>
+                              </div>                                  
+                              
+                          </div>                    
+      
+                      </form>
+                  </div>
 
-                <div class="table-search-filter">
-                    <input type="search" name="" id="" placeholder="filter ...">
-                    <i class="fa fa-search"></i>
-                </div>
-
-                <div class="table-dropdown">
-                  <form>
-                    <div class="select-mini">
-                      <select id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                      </select>
-                    </div>
-                  </form>
-                </div>     
-                
-                <div class="table-data-count">
-                    <p class="data-counter">Data 1-20 dari 999</p>
-                </div>
-
-            </div>
-
-          <div class="table-content-wrapper">
-
-            <table>
-              
-              <tr>
-                <th>ID</th>
-                <th>NIK</th>
-                <th>Nama</th>
-                <th>Nomor Telepon</th>
-                <th>Email</th>
-                <th>Jabatan</th>
-                <th>Pilihan</th>
-              </tr>
-
-              <tr>
-                <td>2</td>
-                <td>1000</td>
-                <td>NONAKTIF</td>
-                <td>01234</td>
-                <td>123@GMAIL.COM</td>
-                <td>Manager</td>
-                <td class="table-management">
-                  <a class="edit-table" href=""><i class="fa fa-pencil-square-o"></i> Ubah</a>
-                  <a class="delete-table" href=""><i class="fa fa-trash-o"></i> Hapus</a>
-                </td>
-              </tr>
-
-
-            </table>
-
-          </div>
-
+          </div>      
           
-          </div>
+                <div class="search-booking-wrapper">
+                    <div class="table-search-false booking">
+                        <i class="fa fa-undo"></i>
+                        <a href="">Batal</a>
+                    </div>
+                    <div class="table-search booking">
+                      <i class="fa fa-check"></i>
+                      <a href="">Simpan</a>
+                  </div>
+                </div>   
         </div>
-      </div>
+
      </div>
+    </div>
 
-  </section>
+</section>
 
-<!-- Javascript -->
-
-<script type="text/javascript">
+  <!-- Javascript -->
   
-  jQuery(document).ready(function ($) {
-
-  $('#exampleFormControlSelect1').select2();
-
-  });
+  <script>
+    jQuery(document).ready(function ($) {
   
-</script>  
-
-<script src="../assets/js/navbar.js"></script>
-<script src="../assets/js/dropdown.js"></script>
-<script src="../assets/js/dropdown-drop.js"></script>
-<script src="../assets/js/datepicker.js"></script>
-<script src="../assets/js/dropdown-search.js"></script>
+    $('#exampleFormControlSelect1').select2();
+  
+    });
+  
+    jQuery(document).ready(function ($) {
+  
+    $('#exampleFormControlSelect2').select2();
+  
+    });
+    </script>
+  
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/dropdown.js"></script>
+    <script src="../assets/js/dropdown-drop.js"></script>
+    <script src="../assets/js/datepicker.js"></script>
+    <script src="../assets/js/dropdown-search.js"></script>
 
 </div>  
 </body>

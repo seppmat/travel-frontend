@@ -524,7 +524,7 @@ nav>ul.navbar ul.dropdownNav>li>a{
 }
 /* Table Data  */
 
-.table{
+.table, .forms{
     width: 100%;
     height: auto;
     position: relative;
@@ -536,11 +536,13 @@ table{
     margin-bottom: 10px;
 }
 
+.forms-wrapper,
 .table-wrapper{    
     margin-top: 30px;
     border: 1px solid #1BBC9B;
 }
 
+.forms-header,
 .table-header{
     padding: 10px;
     background: #1BBC9B;
@@ -548,13 +550,17 @@ table{
     justify-content: space-between;
 }
 
-.table-header .left-side i,
-.table-header .right-side i,
-.table-header .right-side a{
+.forms-header .left-side i,
+.table-header .left-side i{
     color: #fff;
     padding-right: 5px;
 }
 
+.table-header .right-side i{
+    padding-right: 5px;
+}
+
+.forms-header .left-side a,
 .table-header .left-side a{
     font-weight: 700;
     font-size: 20px;
@@ -563,13 +569,20 @@ table{
     padding-left: 10px;
 }
 
-.table-header .right-side{
+.table-header .right-side a{
     border: 1px solid #fff;
     padding: 5px 10px;
     font-size: 12px;
     border-radius: 20px;
+    color: #fff;
 }
 
+.table-header .right-side a:hover{
+    background: #fff;
+    color: #888;
+}
+
+.forms-content,
 .table-content{
     display: flex;
     flex-direction: column;
@@ -588,6 +601,16 @@ table#rekening-bank-table-content{
 
 .table-search{
     background: #1BBC9B;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-left: 15px;
+    padding:4px 10px;
+}
+
+.table-search-false{
+    background: #ed6b75;
     width: fit-content;
     display: flex;
     align-items: center;
@@ -616,11 +639,13 @@ table#rekening-bank-table-content{
     background: #eee;
 }
 
+.table-search-false i,
 .table-search i,
 .table-show i{
     font-size: 13px;
 }
 
+.table-search-false a,
 .table-search a,
 .table-show a{
     color: #fff;
@@ -825,7 +850,16 @@ form{
     margin-top: 10px;
 }
 
-.form-content-wrapper-retrieve input[type=text]{
+#mini-input input[type=text]{
+    width: 160px;
+}
+
+.form-content-wrapper-retrieve input[type=text],
+.form-content-wrapper-retrieve input[type=password],
+.form-content-wrapper-retrieve input[type=email],
+.form-content-wrapper-retrieve input[type=number],
+.form-content-wrapper-retrieve input[type=telephone],
+.form-content-wrapper-retrieve textarea{
     color: #888;
     border: 1px solid #ccc;
     padding: 10px 0 10px 10px;
@@ -1264,3 +1298,52 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: #888;
 }
 
+
+/* Formulir Section */
+
+
+.forms-content-wrapper{
+    padding: 20px;
+}
+
+.forms-content-wrapper h3{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.forms-content-wrapper hr{
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.form-content-wrapper-retrieve .form-content-flexside{
+    display: flex;
+}
+
+.form-content-wrapper-retrieve .form-content-flexside input,
+.form-content-wrapper-retrieve .form-content-flexside .form-group{
+    margin-right: 30px;
+}
+
+
+.forms-body-header-flex{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.forms-body-header-flex a{
+    background: #1BBC9B;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-left: 15px;
+    padding: 8px 10px;
+}
+
+.forms-body-header-flex a i{
+    padding-right: 10px;
+}
