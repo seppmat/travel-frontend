@@ -760,11 +760,12 @@ table#rekening-bank-table-content{
 
 .table-content-wrapper td.table-management a.edit-table{
     background: transparent;
-    padding: 5px 12px;
+    padding: 8px 12px;
     font-size: 12px;
     border: 1px solid #1BBC9B;
     border-radius: 20px;
     color: #1BBC9B;
+    margin-right: 5px;
 }
 
 .table-content-wrapper td.table-management i{
@@ -779,10 +780,11 @@ table#rekening-bank-table-content{
 .table-content-wrapper td.table-management a.delete-table{
     color: #ed6b75;
     background: transparent;
-    padding: 5px 12px;
+    padding: 8px 12px;
     font-size: 12px;
     border: 1px solid #ed6b75;
     border-radius: 20px;
+    margin-left: 5px;
 }
 
 .table-content-wrapper td.table-management a.delete-table:hover{
