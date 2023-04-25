@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Transaksi - Tiket Pesawat - Order Umum</title>
+    
+    <!-- DESC -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- ICON -->
+    <link href="" rel="icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+    <!-- JS -->
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="container-main">
+
+  <section class="header-section">
+
+    <div id="header"> 
+      <nav>
+
+        <button id="sidebarCollapse" type="button"><i class="fal fa-bars"></i></button>  
+
+        <ul class="navbar right">
+             
+          <li class="dorpdown"><a href="#"><i class="fal fa-bell" ></i><span class="badge">12</span></a>
+           <ul class="dropdownNav rightAlign">
+              <li><a href="#">You have 4 notifiction</a></li> 
+                <hr/>
+              <li><a href="#">Please come to me</a></li>
+              <li><a href="#">See All notifiction</a></li>
+            </ul>  
+          </li>
+
+          <li class="dorpdown"> <a href="#" > <i class="fal fa-envelope" ></i> <span class="badge">4</span> </a>
+            <ul class="dropdownNav rightAlign"> 
+              <li><a href="#">View All Message</a></li>             
+            </ul>
+          </li>
+           
+          <li class="dorpdown"> <a href="#"><i class="fal fa-user"></i></a>
+           <ul class="dropdownNav rightAlign profile">
+             <li><a href="#"><i class="fal fa-user" aria-hidden="true"></i> My Profile </a></li>
+             <li><a href="#"><i class="fal fa-cog" aria-hidden="true"></i> Account Setting</a></li>
+            </ul>    
+          </li>
+
+          <li class="dorpdown"> <a href=""><i class="fal fa-sign-out"></i></a></li>
+
+        </ul>
+
+      </nav>
+    </div>
+
+  </section>  
+
+  <section class="navbar-section">
+
+       <div class="vertical-nav" id="sidebar">
+        
+        <div id="leftside-navigation" class="nano">
+          <ul class="nano-content">
+            <li class="sub-menu">
+              <a class="absolute-nav"></a>
+            </li>
+            <li class="sub-menu">
+              <a href="../home.html"><i class="fa fa-home"></i><span>Homepage</span></a>
+            </li>
+
+            <li class="sub-menu">
+              <a href="javascript:void(0);"><i class="fa fa-globe"></i><span>Pengelolaan</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+              <ul class="sub-menu-content">
+  
+                <li><a href="../1-pengelolaan/paket.html"><i class="fa-brands fa-connectdevelop"></i>Paket</a></li>
+                <li><a href="../1-pengelolaan/karyawan.html"><i class="fa fa-users"></i>Karyawan</a></li>
+                <li><a href="../1-pengelolaan/member.html"><i class="fa fa-sitemap"></i>Member</a></li>
+                <li><a href="../1-pengelolaan/operator.html"><i class="fa fa-user-secret"></i>Operator</a></li>
+                <li><a href="../1-pengelolaan/user.html"><i class="fa fa-street-view"></i>User</a></li>
+                <li><a href="../1-pengelolaan/rekening-bank.html"><i class="fa fa-credit-card"></i>Rekening Bank</a></li>
+                <li><a href="../1-pengelolaan/berita.html"><i class="fa fa-newspaper"></i>Berita</a></li>
+  
+              </ul>
+            </li>
+
+            <li class="sub-menu">
+              <a href="javascript:void(0);"><i class="fal fa-puzzle-piece"></i><span>Produk</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+              <ul class="sub-menu-content">
+  
+                <li class="sub-menu-sub">
+                  <a href="javascript:void(0);"><i class="fa fa-plane"></i><span>Flight</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                  <ul class="sub-menu-sub-content">
+                    <li><a href="../2-produk/flight/kota-bandara.html"><i class="fa fa-building-o"></i>Kota Bandara</a></li>
+                    <li><a href="../2-produk/flight/maskapai.html"><i class="fa-solid fa-paper-plane"></i>Maskapai</a></li>
+                    <li><a href="../2-produk/flight/akun-maskapai.html"><i class="fa fa-key"></i>Akun Maskapai</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                    <a href="../2-produk/klinik.html">
+                    <i class="fa-solid fa-expand"></i>Klinik</a>
+                </li>
+  
+              </ul>
+            </li>
+            <li class="sub-menu active">
+              <a href="javascript:void(0);"><i class="fal fa fa-lightbulb-o"></i><span>Transaksi</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+              <ul class="sub-menu-content">
+      
+                <li class="sub-menu-sub">
+                  <a href="javascript:void(0);"><i class="fa fa-fighter-jet"></i><span>Tiket Pesawat</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                  <ul class="sub-menu-sub-content">
+                    <li class="sub-active"><a href="../3-transaksi/tiket-pesawat/order-umum.html"><i class="fa-brands fa-dropbox"></i>Order Umum</a></li>
+                    <li><a href="../3-transaksi/tiket-pesawat/booking.html"><i class="fa fa-bookmark"></i>Booking</a></li>
+                    <li><a href="../3-transaksi/tiket-pesawat/manual-booking.html"><i class="fa fa-compass"></i>Manual Booking</a></li>
+                    <li><a href="../3-transaksi/tiket-pesawat/manual-issued.html"><i class="fa-solid fa-suitcase"></i>Manual Issued</a></li>
+                    <li><a href="../3-transaksi/tiket-pesawat/refund-ticket.html"><i class="fa-solid fa-reply"></i>Refund Ticket</a></li>
+                  </ul>
+                </li>
+
+                <li class="sub-menu-sub">
+                  <a href="javascript:void(0);"><i class="fa fa-ship"></i><span>Tiket Ferry</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                  <ul class="sub-menu-sub-content">
+                    <li><a href="../3-transaksi/tiket-ferry/booking-ferry.html"><i class="fa fa-ticket"></i>Booking Ferry</a></li>
+                    <li><a href="../3-transaksi/tiket-ferry//history.html"><i class="fa fa-history"></i>History</a></li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </li>
+            <li class="sub-menu">
+              <a href="../4-histori-booking/history-booking.html"><i class="fa fa-calculator"></i><span>Histori Booking</span></a>
+            </li>
+            <li class="sub-menu">
+              <a href="../5-retrieve/retrieve.html"><i class="fal fa-ticket"></i><span>Retrieve</span></a>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:void(0);"><i class="fal fa-gem"></i><span>Deposit</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+              <ul class="sub-menu-content">
+  
+                <li><a href="../6-deposit/data-deposit.html"><i class="fa fa-database"></i>Data Deposit</a></li>
+                <li><a href="../6-deposit/top-up.html"><i class="fa fa-dollar"></i>Top Up</a></li>
+                <li><a href="../6-deposit/konfirmasi-top-up.html"><i class="fa-brands fa-get-pocket"></i>Konfirmasi Top Up</a></li>
+                <li><a href="../6-deposit/penyeimbang-deposit.html"><i class="fa fa-balance-scale"></i>Penyeimbang Deposit</a></li>
+                <li><a href="../6-deposit/transfer.html"><i class="fa fa-share-square-o"></i>Transfer</a></li>
+  
+              </ul>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:void(0);"><i class="fal fa-star"></i><span>Laporan</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+              <ul class="sub-menu-content">
+  
+                <li><a href="../7-laporan/mutasi.html"><i class="fa fa-exchange"></i>Mutasi</a></li>
+                <li><a href="../7-laporan/penjualan.html"><i class="fa fa-signal"></i>Penjualan</a></li>
+                <li><a href="../7-laporan/komisi.html"><i class="fa fa-hourglass-half"></i>Komisi</a></li>
+                <li><a href="../7-laporan/rekonsiliasi.html"><i class="fa fa-exchange"></i>Rekonsiliasi</a></li>
+  
+              </ul>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:void(0);"><i class="fal fa-sign-out"></i><span>Logout</span></a>
+            </li>
+          </ul>
+        </div>
+
+       </div>
+
+  </section>
+
+  <section class="page-content content-section" id="content">
+
+        <div class="nav-mark">
+            <p><a href="">Home</a></p><i class="fal fa-angle-right"></i><p>Transaksi</p><i class="fal fa-angle-right"></i><p>Tiket Pesawat</p><i class="fal fa-angle-right"></i><p>Order Umum</p>
+        </div>
+        <div class="hr"><hr></div>
+
+        <div class="table">
+
+            <div class="rincian">
+
+                <div class="rincian-wrapper">
+
+                    <div class="rincian-header">
+                        <p>Invoice <strong>#589856156</strong></p>
+                        <p>30 Februari 2012 25:00:60</p>
+                        <hr class="hr">
+                    </div>
+
+                    <div class="rincian-content-wrapper">
+                        <div class="rincian-content">
+                            <table>
+                                <tr>
+                                    <td colspan="2" class="ribbon-wrapper">
+                                        <div>
+                                            <span class="ribbon">Status : Tiket Sudah Dikirim</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Time Limit</td>
+                                    <td>24 April 2023 20:43:15</td>                         
+                                </tr>
+                                <tr>                                
+                                    <td>Tanggal Booking</td>       
+                                    <td>24 April 2023 19:43:15</td>                                
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="rincian-content">
+                            <table>
+                                <tr>
+                                    <td colspan="2" class="ribbon-wrapper">
+                                        <div>
+                                            <span class="ribbon">Data Pemesan</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nama</td>
+                                    <td><strong>Nurhafid Khalid</strong></td>
+                                </tr>
+                                <tr>                                
+                                    <td>Email</td>       
+                                    <td><strong>pungsadboi@gmail.com</strong></td>
+                                </tr>
+                                <tr>                                
+                                    <td>Phone</td>       
+                                    <td><a href="">08123456789</a></td>
+                                </tr>
+                                <tr>                                
+                                    <td>Verifikasi</td>       
+                                    <td><strong>Email, Whatsapp</strong></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="rincian-content-wrapper">
+                        <div class="rincian-content">
+                            <table>
+                                <tr>
+                                    <td colspan="6" class="ribbon-wrapper">
+                                        <div>
+                                            <span class="ribbon"><i class="fa fa-users"></i> Data Penumpang</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Title</th>
+                                    <th>Nama</th>
+                                    <th>KTP</th>
+                                    <th>TGL Lahir</th>
+                                </tr>
+                                <tr>                                
+                                    <td>1</td>                               
+                                    <td>MR</td>
+                                    <td>Nurhafid Khalid</td>
+                                    <td></td>
+                                    <td>30 Februari 2012</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="rincian-content-wrapper">
+                        <div class="rincian-content">
+                            <table>
+                                <tr>
+                                    <td colspan="7" class="ribbon-wrapper">
+                                        <div>
+                                            <span class="ribbon ribbon-false"><i class="fa fa-plane"></i> Rencana Perjalanan</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Pesawat</th>
+                                    <th>Berangkat</th>
+                                    <th>Tiba</th>
+                                    <th>Rincian</th>
+                                    <th>Harga</th>
+                                    <th>Info</th>
+                                    <th>Booking</th>
+                                </tr>
+                                <tr>                                
+                                    <td></td>                               
+                                    <td>BTH 12:30, <br> 02 Mei 2023</td>
+                                    <td>CGK 14:10, <br> 02 Mei 2023</td>
+                                    <td>0d 1h 40m</td>
+                                    <td>Dewasa : Rp. 1,055,604 <br> Anak : Rp. 1,055,604 <br> Bayi : Rp. 222,338</td>
+                                    <td>Diskon : Rp. 0 <br> Markup : Rp. 20,000</td>
+                                    <td class="button-rincian">
+                                      <a href="">Booking</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7"><i>(*) Waktu keberangkatan dan tiba adalah waktu lokal</i></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" class="strong-uppercase">KODE BOOKING YANG BERELASI DENGAN RENCANA PERJALANAN DI ATAS</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" class="button-rincian">
+                                        <input type="text" placeholder="Kode Booking">
+                                        <a href="">Cari & Simpan</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Maskapai</th>
+                                        <th>Kode Booking</th>
+                                        <th>Time Limit</th>
+                                        <th>Total Harga</th>
+                                        <th>Status</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                    <tr>                                
+                                        <td>1</td>                               
+                                        <td></td>
+                                        <td>
+                                            <a href="">TYG8ER</a>
+                                        </td>
+                                        <td>30 Februari 2012 25:00:60</td>
+                                        <td>1,000,000</td>
+                                        <td><strong>Issued</strong></td>
+                                        <td>
+                                            <a href="">Hapus Relasi</a>
+                                        </td>
+                                    </tr>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    
+                    <div class="rincian-content-wrapper">
+                        <div class="rincian-content">
+                            <table class="no-border">
+                                <tr>
+                                    <td colspan="3" class="ribbon-wrapper">
+                                        <div>
+                                            <span class="ribbon ribbon-warning"><i class="fa fa-money"></i>Rincian Harga</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Total Harga Tiket</td>
+                                    <td>:</td>
+                                    <td></td>
+                                </tr>
+                                <tr>                                
+                                    <td>Markup</td>       
+                                    <td>:</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Diskon</td>
+                                    <td>:</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Kode Unik</td>
+                                    <td>:</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="total-rincian">Total Bayar Pelanggan</td>
+                                    <td class="total-rincian"><strong>:</strong></td>
+                                    <td class="total-rincian"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="rincian-content-wrapper">
+                      <div class="rincian-content">
+                          <table>
+                              <tr>
+                                  <td colspan="3" class="ribbon-wrapper">
+                                      <div>
+                                          <span class="ribbon ribbon-false">Histori Status</span>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>Waktu</td>
+                                  <td>Status</td>   
+                                  <td>Pesan</td>
+                                  
+                              </tr>
+                              <tr>                                
+                                  <td>30 Februari 2012</td>    
+                                  <td>Dibutuhkan Pembayaran</td>
+                                  <td></td>
+                              </tr>
+                          </table>
+                      </div>
+                  </div>
+
+                  <div class="rincian-content-wrapper">
+                    <div class="rincian-content">
+                      <p>Pesan Perubahan Status :</p>
+                      <textarea name="" id="" rows="5"></textarea>
+                    </div>
+                </div>
+
+                </div>
+
+            </div>
+
+            <div class="rincian-select">
+              <div class="rincian-select-wrapper">
+                <div class="table-search-false booking">
+                    <i class="fa fa-undo"></i>
+                    <a href="">Kembali</a>
+                </div>
+                <div class="table-dropdown dropdown-rincian">
+                  <form>
+                    <div class="select-box select-rincian">
+                      <select id="exampleFormControlSelect4">                        
+                        <option>Sedang Verfikasi</option>
+                        <option>Dibutuhkan Pembayaran</option>
+                        <option>Verifikasi Pembayaran</option>
+                        <option>Pembayaran Diterima</option>
+                        <option>Konfirmasi Pembyaran Ditolak</option>                        
+                        <option selected>Tiket Sudah Dikirim</option>
+                        <option>Dibatalkan</option>
+                      </select>
+                    </div>
+                  </form>
+                </div> 
+                <div class="form-content-wrapper-retrieve">
+                  <div class="retrieve-content">
+                    <div class="form-group select-mini">
+                      <select class="form-control" id="exampleFormControlSelect2">
+                        <option selected disabled class="select-blue">Action</option>
+                        <option>Update Status</option>
+                        <option>Update & Kirim Email</option>
+                      </select>
+                    </div>  
+                  </div>
+                </div> 
+              </div>  
+            </div>
+
+        </div>
+
+  </section>
+
+<!-- Javascript -->
+
+
+<script type="text/javascript">
+  //<![CDATA[
+  jQuery(document).ready(function ($) {
+
+  $('#exampleFormControlSelect1').select2();
+
+  });
+
+  jQuery(document).ready(function ($) {
+
+  $('#exampleFormControlSelect2').select2();
+
+  });
+
+  jQuery(document).ready(function ($) {
+
+  $('#exampleFormControlSelect3').select2();
+
+  });  
+
+  jQuery(document).ready(function ($) {
+
+  $('#exampleFormControlSelect4').select2();
+
+  }); 
+  //]]>
+</script>
+
+<script src="../../assets/js/navbar.js"></script>
+<script src="../../assets/js/dropdown.js"></script>
+<script src="../../assets/js/dropdown-drop.js"></script>
+<script src="../../assets/js/datepicker.js"></script>
+<script src="../../assets/js/dropdown-search.js"></script>
+
+
+</div>  
+</body>
+</html>

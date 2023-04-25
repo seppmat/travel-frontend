@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .drop-up .Select-menu-outer {
+            top: auto;
+            bottom: 100%;
+            margin-top: 0px;
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            box-shadow: none;
+        }
+        
+        .drop-up.is-open > .Select-control {
+            border-bottom-right-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="#">
+        <label for="bhs">Bahasa</label>
+        <select name="bahasa" id="bhs">
+          <option value="pilih">Pilih bahasa</option>
+          <option value="javascript">JavaScript</option>
+          <option value="php">PHP</option>
+          <option value="java">Java</option>
+          <option value="golang">Golang</option>
+          <option value="python">Python</option>
+          <option value="c#">C#</option>
+          <option value="c++">C++</option>
+          <option value="erlang">Erlang</option>
+        </select>
+        <input type="submit" value="Kirim" />
+  </form>
+
+  <script>
+    import { findDOMNode } from 'react-dom';
+import Select from 'react-select';
+
+const MAX_MENU_HEIGHT = 200;
+const AVG_OPTION_HEIGHT = 36;
+
+class MySelect extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      dropUp: false,
+    };
+
+    this.determineDropUp = this.determineDropUp.bind(this);
+  }
+
+  componentDidMount() {
+    this.determineDropUp(this.props);
+    window.addEventListener('resize', this.determineDropUp);
+    window.addEventListener('scroll', this.determineDropUp);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.determineDropUp(nextProps);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.determineDropUp);
+    window.removeEventListener('scroll', this.determineDropUp);
+  }
+
+  determineDropUp(props = {}) {
+    const options = props.options || this.props.options || [];
+    const node = findDOMNode(this.selectInst);
+
+    if (!node) return;
+
+    const windowHeight = window.innerHeight;
+    const menuHeight = Math.min(MAX_MENU_HEIGHT, (options.length * AVG_OPTION_HEIGHT));
+    const instOffsetWithMenu = node.getBoundingClientRect().bottom + menuHeight;
+
+    this.setState({
+      dropUp: instOffsetWithMenu >= windowHeight,
+    });
+  }
+
+  render() {
+    const className = this.state.dropUp ? 'drop-up' : '';
+    
+    return (
+      <Select {...this.props} className={className} ref={inst => (this.selectInst = inst)} />
+    );
+  }
+}
+  </script>
+
+</body>
+</html>

@@ -408,7 +408,7 @@ nav>ul.navbar ul.dropdownNav>li>a{
 }
 
 .hr{
-    padding-top: 10px;
+    margin-top: 15px;
     opacity: .2;
 }
 
@@ -1349,3 +1349,191 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .forms-body-header-flex a i{
     padding-right: 10px;
 }
+
+/* Rincian */
+
+.rincian{
+    border: 1px solid #eee;
+    min-height: 120vh;
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+}
+
+.rincian-wrapper{
+    padding: 20px;
+    width: 100%;
+}
+
+.rincian .rincian-header{
+    width: 100%;
+    text-align: right;
+}
+
+.rincian .rincian-header p{
+    font-size: 14px;
+}
+
+.rincian .rincian-content-wrapper{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.rincian .rincian-content{
+    width: 100%;
+    margin: 15px;
+}
+
+.rincian .rincian-content table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #eee;
+}
+
+.rincian .rincian-content th{
+    text-align: left;
+    font-size: 14px;
+    padding: 10px 12px 10px 10px;
+    border: 1px solid #eee;
+}
+
+.rincian .rincian-content table td{
+    padding: 10px 12px 10px 10px;
+    font-size: 13px;
+    background: #fcfcfc;
+    border: 1px solid #eee;
+}
+
+.rincian .rincian-content table.no-border td{
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+.rincian .rincian-content p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.rincian .rincian-content textarea{
+    width: 100%;
+}
+
+.rincian .rincian-content .button-rincian input{
+    width: 85%;
+    border-radius: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.rincian .rincian-content .button-rincian input::placeholder{
+    color: #ccc;
+}
+
+.rincian .rincian-content .button-rincian a{
+    padding: 10px 20px;
+    background: #3598dc;
+    color: #fff;
+    font-weight: 500;
+}
+
+.rincian .rincian-content a{
+    color: #327ad5;
+    font-weight: 600;
+}
+
+.rincian .rincian-content i{
+    padding-right: 6px;
+}
+
+.rincian .rincian-content a:hover{
+    text-decoration: underline;
+}
+
+.rincian .rincian-content td.ribbon-wrapper{
+    padding: 20px 20px 20px 10px;
+}
+
+.rincian .rincian-content .total-rincian{
+    background: #fbe1e3;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.ribbon-false{
+    background: #ed6b75!important;
+}
+
+.ribbon-warning{
+    background: #F1C40F!important;
+    color: #000!important;
+}
+
+.ribbon{
+    position: relative;   
+    left: -12px;
+    padding: 10px 50px 10px 10px;
+    background: #659be0;
+    box-shadow: -1px 2px 3px rgba(255, 255, 255,.3);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+}
+
+.ribbon:before {
+  width: 7px;
+  height: 100%;
+  top: 0;
+  left: -6.5px;
+  padding: 0 0 7px;
+  background: inherit;
+  border-radius: 5px 0 0 5px;
+}
+
+.ribbon:after {
+  width: 7px;
+  height: 5px;
+  bottom: -5px;
+  left: -4.5px;
+  background: lightblue;
+  border-radius: 5px 0 0 5px;
+ }
+
+ .strong-uppercase{
+    font-weight: 600;
+    text-transform: uppercase;
+ }
+
+ .rincian-wrapper-collapse table{
+    border-collapse: collapse;
+ }
+
+.rincian-select{
+    width: 100%;
+}
+
+.rincian-select-wrapper{
+    display: flex;
+    align-items: center;
+    /* border-top: 1px solid #ddd; */
+    /* background: #eee; */
+}
+
+.select2-container--default .select2-selection--single .select-blue{
+    background: #327ad5!important;
+}
+
+ .dropdown-rincian{
+    width: 100%;
+ }
+
+ .select-rincian{
+    width: 100%;
+ }
