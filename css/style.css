@@ -18,7 +18,8 @@
 }
 
 html,
-body {	
+body {
+	height: 100%;
     font-family: "Open Sans", sans-serif;
 	text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -155,6 +156,7 @@ input[type=search]::-webkit-search-cancel-button{
     height: auto;
     top: 0;
     left: 0;
+
     transition: 0.5s;
     position: relative;
 }
@@ -378,7 +380,7 @@ nav>ul.navbar ul.dropdownNav>li>a{
 .content-section{
     padding: 30px;
     background: #fff;
-    min-height: 110vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -408,7 +410,7 @@ nav>ul.navbar ul.dropdownNav>li>a{
 }
 
 .hr{
-    margin-top: 15px;
+    padding-top: 10px;
     opacity: .2;
 }
 
@@ -524,9 +526,9 @@ nav>ul.navbar ul.dropdownNav>li>a{
 }
 /* Table Data  */
 
-.table, .forms{
+.table{
     width: 100%;
-    height: auto;
+    height: 100vh;
     position: relative;
 }
 
@@ -536,13 +538,11 @@ table{
     margin-bottom: 10px;
 }
 
-.forms-wrapper,
 .table-wrapper{    
     margin-top: 30px;
     border: 1px solid #1BBC9B;
 }
 
-.forms-header,
 .table-header{
     padding: 10px;
     background: #1BBC9B;
@@ -550,17 +550,13 @@ table{
     justify-content: space-between;
 }
 
-.forms-header .left-side i,
-.table-header .left-side i{
+.table-header .left-side i,
+.table-header .right-side i,
+.table-header .right-side a{
     color: #fff;
     padding-right: 5px;
 }
 
-.table-header .right-side i{
-    padding-right: 5px;
-}
-
-.forms-header .left-side a,
 .table-header .left-side a{
     font-weight: 700;
     font-size: 20px;
@@ -569,20 +565,13 @@ table{
     padding-left: 10px;
 }
 
-.table-header .right-side a{
+.table-header .right-side{
     border: 1px solid #fff;
     padding: 5px 10px;
     font-size: 12px;
     border-radius: 20px;
-    color: #fff;
 }
 
-.table-header .right-side a:hover{
-    background: #fff;
-    color: #888;
-}
-
-.forms-content,
 .table-content{
     display: flex;
     flex-direction: column;
@@ -601,16 +590,6 @@ table#rekening-bank-table-content{
 
 .table-search{
     background: #1BBC9B;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    margin-left: 15px;
-    padding:4px 10px;
-}
-
-.table-search-false{
-    background: #ed6b75;
     width: fit-content;
     display: flex;
     align-items: center;
@@ -639,13 +618,11 @@ table#rekening-bank-table-content{
     background: #eee;
 }
 
-.table-search-false i,
 .table-search i,
 .table-show i{
     font-size: 13px;
 }
 
-.table-search-false a,
 .table-search a,
 .table-show a{
     color: #fff;
@@ -727,17 +704,14 @@ table#rekening-bank-table-content{
     font-size: 15px;
 }
 
-.fa-money-bill-1-wave{
-    font-weight: 100;
-}
 
-td .fa-xmark{
-    color: #ff0000!important;
+.table-content-wrapper td .fa-xmark{
+    color: #ff0000;
     font-weight: 600;
 }
 
-td .fa-check{
-    color: #1BBC9B!important;
+.table-content-wrapper td .fa-check{
+    color: #1BBC9B;
     font-weight: 600;
 }
 
@@ -763,12 +737,11 @@ td .fa-check{
 
 .table-content-wrapper td.table-management a.edit-table{
     background: transparent;
-    padding: 8px 12px;
+    padding: 5px 12px;
     font-size: 12px;
     border: 1px solid #1BBC9B;
     border-radius: 20px;
     color: #1BBC9B;
-    margin-right: 5px;
 }
 
 .table-content-wrapper td.table-management i{
@@ -783,11 +756,10 @@ td .fa-check{
 .table-content-wrapper td.table-management a.delete-table{
     color: #ed6b75;
     background: transparent;
-    padding: 8px 12px;
+    padding: 5px 12px;
     font-size: 12px;
     border: 1px solid #ed6b75;
     border-radius: 20px;
-    margin-left: 5px;
 }
 
 .table-content-wrapper td.table-management a.delete-table:hover{
@@ -855,16 +827,7 @@ form{
     margin-top: 10px;
 }
 
-#mini-input input[type=text]{
-    width: 160px;
-}
-
-.form-content-wrapper-retrieve input[type=text],
-.form-content-wrapper-retrieve input[type=password],
-.form-content-wrapper-retrieve input[type=email],
-.form-content-wrapper-retrieve input[type=number],
-.form-content-wrapper-retrieve input[type=telephone],
-.form-content-wrapper-retrieve textarea{
+.form-content-wrapper-retrieve input[type=text]{
     color: #888;
     border: 1px solid #ccc;
     padding: 10px 0 10px 10px;
@@ -1189,7 +1152,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border: 2px solid transparent;
 }
 
-.rincian .rincian-content .button-rincian .just-a-flex-wrapper,
 .just-a-flex-wrapper{
     display: flex;
     align-items: center;
@@ -1304,291 +1266,3 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: #888;
 }
 
-
-/* Formulir Section */
-
-
-.forms-content-wrapper{
-    padding: 20px;
-}
-
-.forms-content-wrapper h3{
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-.forms-content-wrapper hr{
-    border: 1px solid #eee;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-
-.form-content-wrapper-retrieve .form-content-flexside{
-    display: flex;
-}
-
-.form-content-wrapper-retrieve .form-content-flexside input,
-.form-content-wrapper-retrieve .form-content-flexside .form-group{
-    margin-right: 30px;
-}
-
-
-.forms-body-header-flex{
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.forms-body-header-flex a{
-    background: #1BBC9B;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    margin-left: 15px;
-    padding: 8px 10px;
-}
-
-.forms-body-header-flex a i{
-    padding-right: 10px;
-}
-
-/* Rincian */
-
-.rincian{
-    border: 1px solid #eee;
-    margin-top: 20px;
-    display: flex;
-    width: 100%;
-}
-
-.rincian-wrapper{
-    padding: 20px;
-    width: 100%;
-}
-
-.rincian .rincian-header{
-    width: 100%;
-    text-align: right;
-}
-
-.rincian .rincian-header p{
-    font-size: 14px;
-}
-
-.rincian .rincian-content-wrapper{
-    width: 100%;
-    justify-content: space-between;
-    display: flex;
-}
-
-.rincian .rincian-content{
-    width: 100%;
-    margin: 15px;
-}
-
-.rincian .rincian-content table{
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    border: 1px solid #eee;
-}
-
-.rincian .rincian-content th{
-    text-align: left;
-    font-size: 14px;
-    padding: 10px 12px 10px 10px;
-    border: 1px solid #eee;
-}
-
-.rincian .rincian-content table td{
-    padding: 10px 12px 10px 10px;
-    font-size: 13px;
-    background: #fcfcfc;
-    border: 1px solid #eee;
-    width: auto;
-}
-
-.rincian .rincian-content table.no-border td{
-    border: none;
-    border-top: 1px solid #eee;
-}
-
-.rincian .rincian-content p{
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 12px;
-}
-
-.rincian .rincian-content textarea{
-    width: 100%;
-}
-
-.rincian .rincian-content .button-rincian input{
-    width: 85%;
-    border-radius: 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-.rincian .rincian-content .button-rincian input::placeholder{
-    color: #ccc;
-}
-
-.rincian .rincian-content .button-rincian a{
-    padding: 10px 20px;
-    background: #3598dc;
-    color: #fff;
-    font-weight: 500;
-}
-
-.rincian .rincian-content a{
-    color: #327ad5;
-    font-weight: 600;
-}
-
-.rincian .rincian-content i{
-    padding-right: 6px;
-}
-
-.rincian .rincian-content a:hover{
-    text-decoration: underline;
-}
-
-.rincian .rincian-content td.ribbon-wrapper{
-    padding: 20px 20px 20px 10px;
-}
-
-.rincian .rincian-content .total-rincian{
-    background: #fbe1e3;
-    font-weight: 600;
-    font-size: 17px;
-    padding: 10px;
-}
-
-.ribbon-false{
-    background: #ed6b75!important;
-}
-
-.ribbon-warning{
-    background: #F1C40F!important;
-    color: #000!important;
-}
-
-.ribbon{
-    position: relative;   
-    left: -12px;
-    padding: 10px 50px 10px 10px;
-    background: #659be0;
-    box-shadow: -1px 2px 3px rgba(255, 255, 255,.3);
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-.ribbon:before, .ribbon:after {
-  content: "";
-  position: absolute;
-}
-
-.ribbon:before {
-  width: 7px;
-  height: 100%;
-  top: 0;
-  left: -6.5px;
-  padding: 0 0 7px;
-  background: inherit;
-  border-radius: 5px 0 0 5px;
-}
-
-.ribbon:after {
-  width: 7px;
-  height: 5px;
-  bottom: -5px;
-  left: -4.5px;
-  background: lightblue;
-  border-radius: 5px 0 0 5px;
- }
-
- .strong-uppercase{
-    font-weight: 600;
-    text-transform: uppercase;
- }
-
- .rincian-wrapper-collapse table{
-    border-collapse: collapse;
- }
-
-.rincian-select{
-    width: 100%;
-    margin-top: 20px;
-}
-
-.rincian-select-wrapper{
-    display: flex;
-    align-items: center;
-    /* border-top: 1px solid #ddd; */
-    /* background: #eee; */
-}
-
-.select2-container--default .select2-selection--single .select-blue{
-    background: #327ad5!important;
-}
-
- .dropdown-rincian{
-    width: 100%;
- }
-
- .select-rincian{
-    width: 100%;
- }
-
- .no-border input[type="text"]{
-    padding: 8px;
-    border-radius: 0;
-    border: 1px solid #ccc;
- }
-
- /* Text Area */
-
-
- .text-area-content{
-    padding: 10px;
-    border: 1px solid #eee;
-    border-radius: 5px;
-    margin-top: 30px;
-}
-
-.ta-editor {
-    min-height: 300px;
-    overflow: auto;
-    font-family: inherit;
-    font-size: 100%;
-    padding: 15px;
-  }
-
-.ta-toolbar{
-    margin-bottom: 20px;
-    display: flex;
-}
-
-  
-.text-area-content .btn-group{
-    padding: 10px;
-    display: flex;
-}
-
-.text-area-content .btn-group button{
-    padding: 12px 15px;
-    background: #fff;
-    border-top: 1px solid #eee;
-    border-left: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    border-right: 0.1px solid #eee;
-    border-radius: 3px;
-}
-
-.text-area-content .btn-group button:hover{
-    background: #eee;
-}

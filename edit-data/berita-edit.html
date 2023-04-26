@@ -26,6 +26,13 @@
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <!-- Textarea -->
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css'>
+    
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-sanitize.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/textAngular/1.1.2/textAngular.min.js'></script>
+
 </head>
 <body>
 <div class="container-main">
@@ -137,7 +144,7 @@
                   <a href="javascript:void(0);"><i class="fa fa-ship"></i><span>Tiket Ferry</span><i class="arrow fa fa-angle-right pull-right"></i></a>
                   <ul class="sub-menu-sub-content">
                     <li><a href="../3-transaksi/tiket-ferry/booking-ferry.html"><i class="fa fa-ticket"></i>Booking Ferry</a></li>
-                    <li><a href="../3-transaksi/tiket-ferry//history.html"><i class="fa fa-history"></i>History</a></li>
+                    <li><a href="../3-transaksi/tiket-ferry/history.html"><i class="fa fa-history"></i>History</a></li>
                   </ul>
                 </li>
                 
@@ -229,6 +236,13 @@
                                     </select>
                                   </div>  
                                 </div>
+                              </div>   
+                              <div class="form-content-wrapper-retrieve">
+                                <div class="retrieve-content">
+                                    <div ng-app="textAngularTest" ng-controller="wysiwygeditor" class="text-area-content">
+                                      <div text-angular="text-angular" name="htmlcontent" ng-model="htmlcontent" ta-disabled='disabled'></div>
+                                    </div>  
+                                </div>
                               </div>                                  
                               
                           </div>                    
@@ -270,6 +284,7 @@
     <script src="../assets/js/dropdown-drop.js"></script>
     <script src="../assets/js/datepicker.js"></script>
     <script src="../assets/js/dropdown-search.js"></script>
+    <script src="../assets/js/textarea.js"></script>
 
 </div>  
 </body>
