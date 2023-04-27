@@ -732,12 +732,12 @@ table#rekening-bank-table-content{
 }
 
 td .fa-xmark{
-    color: #ff0000!important;
+    color: #ff0000;
     font-weight: 600;
 }
 
 td .fa-check{
-    color: #1BBC9B!important;
+    color: #1BBC9B;
     font-weight: 600;
 }
 
@@ -1528,8 +1528,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .rincian-select-wrapper{
     display: flex;
     align-items: center;
-    /* border-top: 1px solid #ddd; */
-    /* background: #eee; */
 }
 
 .select2-container--default .select2-selection--single .select-blue{
@@ -1547,6 +1545,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
  .no-border input[type="text"]{
     padding: 8px;
     border-radius: 0;
+    border: 1px solid #ccc;
+ }
+
+ .rincian-content td input{
+    padding: 8px;
     border: 1px solid #ccc;
  }
 
