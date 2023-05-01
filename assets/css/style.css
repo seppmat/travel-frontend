@@ -86,8 +86,8 @@ input[type=search]::-webkit-search-cancel-button{
 .login-section{
     margin-top: 50px;
     background: #eceef1;
-    width: 20%;
-    height: 45vh;
+    width: 25%;
+    height: auto;
     padding: 30px;
 }
 
@@ -105,11 +105,16 @@ input[type=search]::-webkit-search-cancel-button{
     background: #dde3ec;
     font-size: 15px;
     letter-spacing: 1px;
+    border: none;
+    transition: 1s;
 }
 
 .login-input input:focus{
     border: 1px solid #c0c5cd;
+    transition: 1s;
 }
+
+.login-input input::placeholder{font-size: 13px; color: #888; opacity: .6;}
 
 .login-submit input[type=submit]{   
     width: 40%;
@@ -117,10 +122,11 @@ input[type=search]::-webkit-search-cancel-button{
     padding: 15px;
     color: #fff;
     margin-top: 30px;
+    border: 1px solid #32c5d2;
 }
 
 .register-section{
-    width: 20%;
+    width: 25%;
     background: #6c7a8d;
     padding: 20px;
     text-transform: uppercase;
@@ -378,7 +384,7 @@ nav>ul.navbar ul.dropdownNav>li>a{
 .content-section{
     padding: 30px;
     background: #fff;
-    min-height: 110vh;
+    min-height: 120vh;
     width: 100%;
 }
 
@@ -491,7 +497,7 @@ nav>ul.navbar ul.dropdownNav>li>a{
 /* Status Table */
 
 
-.table-content-wrapper td .status-true{ /* Green Color*/
+.status-true{ /* Green Color*/
     background: #32c5d2;
     padding: 5px 30px;
     color: #fff;
@@ -499,7 +505,7 @@ nav>ul.navbar ul.dropdownNav>li>a{
     font-weight: 500;
 }
 
-.table-content-wrapper td .status-false{ /* Red Color*/
+.status-false{ /* Red Color*/
     background: #ed6b75;
     padding: 5px 30px;
     color: #fff;
@@ -507,7 +513,7 @@ nav>ul.navbar ul.dropdownNav>li>a{
     font-weight: 500;
 }
 
-.table-content-wrapper td .status-warning{ /* Yellow Color*/
+.status-warning{ /* Yellow Color*/
     background: #f1c40f;
     padding: 5px 30px;
     color: #fff;
@@ -515,7 +521,7 @@ nav>ul.navbar ul.dropdownNav>li>a{
     font-weight: 500;
 }
 
-.table-content-wrapper td .status-booked{ /* Blue Color*/
+.status-booked{ /* Blue Color*/
     background: #659be0;
     padding: 5px 30px;
     color: #fff;
@@ -609,6 +615,10 @@ table#rekening-bank-table-content{
     padding:4px 10px;
 }
 
+.table-search:hover{
+    background: #158f76;
+}
+
 .table-search-false{
     background: #ed6b75;
     width: fit-content;
@@ -617,6 +627,10 @@ table#rekening-bank-table-content{
     color: #fff;
     margin-left: 15px;
     padding:4px 10px;
+}
+
+.table-search-false:hover{
+    background: #e12330;
 }
 
 .table-show{
@@ -836,7 +850,7 @@ form{
 
 .form-wrapper-retrieve{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 .form-content-wrapper-retrieve{
@@ -849,6 +863,19 @@ form{
     padding-right: 30px;
     width: 300px;
 }
+
+.form-wrapper-retrieve .rincian-refund{    
+    display: flex;
+    width: 500px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.form-wrapper-retrieve .rincian-refund label,
+.form-wrapper-retrieve .rincian-refund td{
+    font-size: 13px;
+}
+
 
 .form-content-wrapper-retrieve .retrieve-content .select2{
     margin-bottom: 10px!important;
@@ -1224,9 +1251,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* Dropdown Search */
 
-.table-dropdown{
-    
-}
 
 .form-group{
     width: 400px;
@@ -1250,6 +1274,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     line-height: 36px;
 }
 
+#action-form .select2-container--default .select2-selection--single,
+#action-form .select2-container{
+    appearance: none!important;
+    -webkit-appearance: none!important;
+    -moz-appearance: none!important;
+    background: #32c5d2!important;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='25' viewBox='0 0 24 24' width='30' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")!important;
+    background-repeat: no-repeat!important;
+    background-position-x: 111%!important;
+    background-position-y: 5px!important;
+    padding-right: 0.15rem!important;
+}
+
+#action-form .select2-selection__rendered{
+    color: #fff!important;
+}
+
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     line-height: 34px;
     color: #888!important;
@@ -1263,8 +1304,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-image: url("data:image/svg+xml;utf8,<svg fill='grey' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='grey' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")!important;
+    background-repeat: no-repeat!important;
     background-position-x: 100%;
     background-position-y: 5px;
     border: 1px solid #dfdfdf;
@@ -1443,7 +1484,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-weight: 500;
 }
 
-.rincian .rincian-content a{
+.rincian .rincian-content a.for-links{
     color: #327ad5;
     font-weight: 600;
 }
@@ -1452,7 +1493,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-right: 6px;
 }
 
-.rincian .rincian-content a:hover{
+.rincian .rincian-content a.for-links:hover{
     text-decoration: underline;
 }
 
@@ -1474,6 +1515,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .ribbon-warning{
     background: #F1C40F!important;
     color: #000!important;
+}
+
+.ribbon-issued{
+    background: #32c5d2!important;
+}
+
+.ribbon-else{
+    background: #659be0!important;
+}
+
+.ribbon-else:hover{
+    background: #3598dc!important;
 }
 
 .ribbon{
@@ -1522,7 +1575,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .rincian-select{
     width: 100%;
-    margin-top: 20px;
+    padding: 20px;
+    background: #eee;
+    display: flex;    
+}
+
+.rincian-select .select2-container{
+    background-color: #fff;
 }
 
 .rincian-select-wrapper{
@@ -1532,6 +1591,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .select2-container--default .select2-selection--single .select-blue{
     background: #327ad5!important;
+}
+
+.rincian-select-wrapper .input-additional input{
+    padding: 12px;
+    border: none;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.rincian-select-wrapper .input-additional input::placeholder{
+    font-size: 18px;
 }
 
  .dropdown-rincian{
@@ -1553,8 +1623,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border: 1px solid #ccc;
  }
 
- /* Text Area */
+ .rincian-select-wrapper .print{
+    background: #888;
+ }
 
+ .rincian-select-wrapper .print:hover{
+    background: #798d8f;
+ }
+
+ 
+ /* Text Area */
 
  .text-area-content{
     padding: 10px;
