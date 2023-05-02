@@ -5,3 +5,5 @@ $(function() {
       $('#sidebar').toggleClass('activeMiniSideNav');
     });
   });
+
+

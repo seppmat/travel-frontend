@@ -1673,3 +1673,330 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .text-area-content .btn-group button:hover{
     background: #eee;
 }
+
+/* Steps Topup */
+
+.steps{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.steps-wrapper{
+    width: 100%;
+    border: 1px solid #eee;
+}
+
+.steps-header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.steps-header i{
+    margin-right: 10px;
+    color: #1BBC9B;
+}
+
+.steps-header p button{
+    font-size: 17px;
+    font-weight: 600;
+    color: #4B77BE;
+    background: none;
+    border: none;    
+}
+
+.steps-header p button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.steps-content{
+    display: none;    
+    padding: 30px;
+}
+
+.steps-content .steps-timeline{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.steps-content .line-circle hr{
+    opacity: .8;
+}
+
+.x-steps-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.x-steps-circle p{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.content-steps{
+    display: flex;
+    margin-top: 20px;
+    padding: 0!important;
+    justify-content: space-evenly;
+    position: relative;
+    text-align: center;
+}
+
+.content-steps h3{
+    font-weight: 500;
+}
+
+.content-steps h3 p{
+    font-weight: 500;
+}
+
+.steps-container {
+    width: 100%;
+}
+
+.steps-list {
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+}
+
+.steps-list:before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #e7505a;
+    position: absolute;
+    left: 32px;
+    top: 0;
+}
+
+.steps-list:after {
+    content: '';
+    position: absolute;
+    background: #e7505a;
+    bottom: 0;
+    left: 25.5px;
+    width: 7px;
+    height: 7px;
+    border: 3px solid #dee1e3;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.reply-list:before, .reply-list:after {display: none;}
+.reply-list li:before {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background: #c7cacb;
+    position: absolute;
+    top: 25px;
+    left: -55px;
+}
+
+
+.steps-list li {
+    margin-bottom: 15px;
+    display: block;
+    position: relative;
+}
+
+.steps-list li:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    width: 0;
+}
+
+.reply-list {
+    padding-left: 88px;         
+    clear: both;
+    margin-top: 15px;
+}
+
+.steps-list .step-avatar {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    z-index: 99;
+    float: left;
+    border: 3px solid #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.steps-list .step-avatar img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.reply-list .step-avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.step-main-level:after {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+.steps-list .step-box {
+    width: 93%;
+    float: right;
+    position: relative;
+    -webkit-box-shadow: 0 0 0 rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    box-shadow: 0 0 0 rgba(0,0,0,0.15);
+    background-color: #fff;
+}
+
+.steps-list .step-box:before, .steps-list .step-box:after {
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    display: block;
+    border-width: 12px 12px 12px 0;
+    border-style: solid;
+    border-color: transparent #fff;
+    top: 18px;
+    left: -11px;
+}
+
+.steps-list .stepbox1:before, .steps-list .stepbox1:after{
+    border-color: transparent #4B77BE;
+}
+
+.steps-list .stepbox2:before, .steps-list .stepbox2:after{
+    border-color: transparent #f3c200;
+}
+
+.steps-list .stepbox3:before, .steps-list .stepbox3:after{
+    border-color: transparent #1BBC9B;
+}
+
+.steps-list .step-box:before {
+    border-width: 11px 13px 11px 0;
+    border-color: transparent rgba(0,0,0,0.05);
+    left: -12px;
+}
+
+.step-box .step-head {
+    background: #FCFCFC;
+    padding: 20px 12px;
+    border-bottom: 1px solid #E5E5E5;
+    overflow: hidden;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.step-box .step-head i:hover {
+    color: #03658c;
+}
+
+.step-box .step-name {
+    color: #283035;
+    font-size: 14px;
+    font-weight: 700;
+    float: left;
+    margin-right: 10px;
+}
+
+.step-box .step-name a {
+    color: #283035;
+}
+
+.step-box .step-content {
+    background: #fff;
+    -webkit-border-radius: 0 0 0px 0px;
+    -moz-border-radius: 0 0 0px 0px;
+    border-radius: 0 0 0px 0px;
+}
+
+.step-box .step-content p{
+    font-size: 14px;
+    color: #363636;
+    text-transform: uppercase;
+    padding: 12px 12px 0 12px;
+}
+
+.step-box .step-content p i{
+    margin-right: 20px;
+}
+
+.step-box .step-content li{
+    padding-left: 1.2cm;
+    font-size: 13px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+    padding-right: 50px;
+}
+
+.step-box .step-footer {
+    border-radius: 0 0 4px 4px;
+    padding: 12px;
+    width: 100%;
+    background: #fff none repeat scroll 0 0;
+}
+
+.step-box .step-footer textarea {
+    resize: none;
+    width: 100%;
+    border-radius: 4px;
+    padding: 1%;
+}
+.step-box .btn-reply {
+    cursor: pointer;
+}
+.step-box .step-name, .step-box .step-name a {color: #fff;}
+.step-box .step-name:after {
+    background: #03658c;
+    color: #fff;
+    font-size: 12px;
+    padding: 3px 5px;
+    font-weight: 700;
+    margin-left: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.step-box .step-footer {
+    display: none;
+}
+@media only screen and (max-width: 766px) {
+.steps-container {
+    width: 480px;
+}
+
+.steps-list .step-box {
+    width: 390px;
+}
+
+.reply-list .step-box {
+    width: 320px;
+}
+}
